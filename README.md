@@ -17,7 +17,7 @@ The release package includes both `cutie-loader.exe` and `cutie.dll`. You can lo
 ### Option 1: Standalone Loader (Recommended)
 1. Download `cutie-loader.exe`.
 2. Launch the game client.
-3. Run `cutie-loader.exe`. It will automatically initialize, unpack the embedded DLL/configs, and inject them. *(No Administrator privileges required.)*
+3. Run `cutie-loader.exe`. It will automatically initialize, unpack the embedded DLL/configs, and inject them.
 
 ### Option 2: Custom Injection
 1. Download `cutie.dll` from the latest release.
@@ -26,22 +26,21 @@ The release package includes both `cutie-loader.exe` and `cutie.dll`. You can lo
 
 ---
 
-## How to Add Your Own Screenshots
-To replace the image placeholders in this README, simply name your screenshots as follows and upload them to the root folder of this repository:
-- **Main Loader Preview**: name it `loader_preview.png`
-- **ClickGUI Preview**: name it `clickgui_preview.png`
-- **Tablist Injection Preview**: name it `tablist_injection_preview.png`
-- **Settings Preview**: name it `settings_preview.png`
-- **Stats Tablist Preview**: name it `stats_display_preview.png`
-
-Alternatively, you can upload them to a directory (like `images/`) and update the paths at the bottom or top of this file.
+## Status Displays & Indicators
+When viewing statistics in-game or via the tablist, the following status indicators are used:
+- **NICK**: The player is nicked (using a nickname/disguise).
+- **OFF**: Statistics tracking is turned off or disabled.
+- **N/A**: Statistics are not available (e.g., a new account with all 0 stats).
 
 ---
 
 ## Previews & Interface
 
-### In-Game ClickGUI & Stats API Config
+### In-Game ClickGUI
 ![ClickGUI Configuration](clickgui_preview.png)
+
+### Stats API Module Configuration
+![Stats API Config](stats_api_preview.png)
 
 ### Tablist Modification Injection
 ![Tablist Injection](tablist_injection_preview.png)
