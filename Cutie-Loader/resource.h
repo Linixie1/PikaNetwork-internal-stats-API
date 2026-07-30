@@ -1,0 +1,4 @@
+#define IDI_ICON1 101
+#define IDR_DLL1 102
+#define IDR_CONFIG1 103
+#define IDR_STATS_CFG 105
