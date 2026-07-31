@@ -31,6 +31,20 @@ You can load Cutie using the standalone loader executable or inject the DLL manu
 
 ---
 
+## ⚠️ Antivirus False Positives
+
+Because the loader reads game memory and injects code into Minecraft (which is required for the allocation to work), **Windows Defender or other antivirus software may falsely flag `cutie-loader.exe` as malware and delete it.** The standalone `cutie.dll` is much less likely to trigger this, but if you are using the loader, you may need to whitelist it.
+
+**Quick Fix for Windows Defender:**
+1. Create a dedicated folder for the loader (for example: `C:\Cutie`).
+2. Open Windows PowerShell as **Administrator**.
+3. Copy, paste, and run the following command to automatically exclude that folder from Defender scans:
+   ```powershell
+   Add-MpPreference -ExclusionPath "C:\Cutie"
+4. Download and place `cutie-loader.exe` into that newly excluded folder and run it.
+
+---
+
 ## Logs & Troubleshooting
 
 If you run into injection issues, crashes, or rendering bugs:
