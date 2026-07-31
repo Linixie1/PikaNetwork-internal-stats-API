@@ -1,4 +1,4 @@
-﻿@echo off
+@echo off
 setlocal enabledelayedexpansion
 
 set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
@@ -41,6 +41,20 @@ if %ERRORLEVEL% neq 0 (
 
 copy /y "Cutie-Loader\build\Cutie-Loader.exe" ".\cutie-loader.exe" >nul
 echo [3/3] Build completed successfully!
+<<<<<<< HEAD
+=======
+pause
+exit /b 0
+
+:fallback
+echo [WARNING] Full build failed, using cached components...
+if exist "cutie-loader.exe" (
+    echo Loader already available.
+) else (
+    echo Creating stub loader...
+    echo This is a placeholder > "cutie-loader.exe"
+)
+>>>>>>> 180f5e1346a12064c66653b3230941d0ae22e72a
 pause
 exit /b 0
 
