@@ -5,12 +5,13 @@ Cutie is an internal stats modification for Minecraft 1.8.9. Instead of drawing 
 ![Loader Menu](loader_preview.png)
 
 ## Supported Clients (1.8.9)
-Cutie is built for **Minecraft 1.8.9** and natively supports:
-- **Vanilla 1.8.9**
-- **Minecraft Forge 1.8.9**
-- **Lunar Client** (OptiFine & Forge profiles)
-- **Badlion Client**
-- **LabyMod** (Vanilla & Forge setups)
+Cutie is built for **Minecraft 1.8.9** and natively supports:  
+
+- <img src="https://www.google.com/s2/favicons?domain=minecraft.net&sz=16" width="16" height="16"/> **Vanilla**
+- <img src="https://www.google.com/s2/favicons?domain=minecraftforge.net&sz=16" width="16" height="16"/> **Forge**
+- <img src="https://www.google.com/s2/favicons?domain=lunarclient.com&sz=16" width="16" height="16"/> **Lunar Client** (OptiFine & Forge profiles)
+- <img src="https://www.google.com/s2/favicons?domain=badlion.net&sz=16" width="16" height="16"/> **Badlion Client**
+- <img src="https://www.google.com/s2/favicons?domain=labymod.net&sz=16" width="16" height="16"/> **LabyMod** (Vanilla & Forge)
 
 *Note: Other 1.8.9 clients may work, but the ones listed above are fully tested.*
 
@@ -64,17 +65,11 @@ When viewing stats in-game or via the tab list:
 
 ## Previews
 
-### In-Game ClickGUI
-![ClickGUI Configuration](clickgui_preview.png)
-
-### Display Settings
-![Stats API Config](stats_api_preview.png)
-
-### Tablist Modification Injection
-![Tablist Injection](tablist_injection_preview.png)
-
-### Stats API Module Configuration
-![Settings Interface](settings_preview.png)
+| In-Game ClickGUI | Display Settings |
+| :---: | :---: |
+| ![ClickGUI Configuration](clickgui_preview.png) | ![Stats API Config](stats_api_preview.png) |
+| **Tablist Modification Injection** | **Stats API Module Configuration** |
+| ![Tablist Injection](tablist_injection_preview.png) | ![Settings Interface](settings_preview.png) |
 
 ### Live Stats Tablist Display
 ![Stats Display](stats_display_preview.png)
@@ -83,3 +78,10 @@ When viewing stats in-game or via the tab list:
 
 ## Support
 For bugs or questions, reach out on Discord: `linixie.`
+
+---
+
+### Credits & Acknowledgements
+- [<img src="https://avatars.githubusercontent.com/u/1010356?s=32&v=4" width="16" height="16" />](https://github.com/nlohmann/json) **[nlohmann/json](https://github.com/nlohmann/json)** - JSON for Modern C++. 
+- [<img src="https://avatars.githubusercontent.com/u/8225057?s=32&v=4" width="16" height="16" />](https://github.com/ocornut/imgui) **[Dear ImGui](https://github.com/ocornut/imgui)** - Bloat-free Immediate Mode Graphical User Interface for C++ with minimal dependencies.
+- [<img src="https://avatars.githubusercontent.com/u/7464779?s=32&v=4" width="16" height="16" />](https://github.com/DarthTon/Blackbone) **[Blackbone](https://github.com/DarthTon/Blackbone)** - Windows memory hacking library for process interaction and manual mapping.
