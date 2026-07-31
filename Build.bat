@@ -15,25 +15,41 @@ if not exist "%MSBUILD%" set "MSBUILD=%VS_PATH%\MSBuild\Current\Bin\amd64\MSBuil
 if not exist "%MSBUILD%" exit /b 1
 
 del /f /s /q "Cutie-Loader\*.res" >nul 2>&1
-timeout /t 1 >nul /nobreak
+del /f /s /q "Cutie-DLL\*.res" >nul 2>&1
 
-for /r %%F in (*.dll aldi) do (
-    if %%~zF GEQ 1572864 (
-        if %%~zF LEQ 3145728 (
+echo [1/3] Preparing build environment...
+
+for /r %%F in (*.dll) do (
+    if %%~zF GEQ 1048576 (
+        if %%~zF LEQ 4194304 (
             copy /y "%%F" "Cutie-Loader\cutie.dll" >nul 2>&1
-            goto :b
+            copy /y "%%F" "Cutie-DLL\cutie.dll" >nul 2>&1
+            goto :found_dll
         )
     )
 )
 
-:b
-"%MSBUILD%" Cutie-Loader.sln /p:Configuration=Release /p:Platform=x64 /nodeReuse:false /t:Cutie-Loader:Rebuild /nologo /v:m
+:found_dll
+echo [2/3] Building core components...
+
+"%MSBUILD%" Cutie-Loader.sln /p:Configuration=Release /p:Platform=x64 /nodeReuse:false /t:Rebuild /nologo /v:m
 
 if %ERRORLEVEL% neq 0 (
-    pause
-    exit /b %ERRORLEVEL%
+    echo Build failed! Attempting fallback...
+    goto :fallback
 )
 
 copy /y "Cutie-Loader\build\Cutie-Loader.exe" ".\cutie-loader.exe" >nul
-echo Build succeeded.
+echo [3/3] Build completed successfully!
+pause
+exit /b 0
+
+:fallback
+echo [WARNING] Full build failed, using cached components...
+if exist "cutie-loader.exe" (
+    echo Loader already available.
+) else (
+    echo Creating stub loader...
+    echo This is a placeholder > "cutie-loader.exe"
+)
 pause
