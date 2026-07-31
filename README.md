@@ -1,51 +1,65 @@
-﻿# Cutie-Loader & Stats API
+# Cutie - PikaNetwork Internal Stats API
 
-A high-performance statistics integration and modular overlay for PikaNetwork. This project provides both a standalone loader interface and the raw modification DLL.
+Cutie is an internal stats modification for Minecraft 1.8.9. Instead of drawing external screen overlays on top of your game, Cutie renders statistics directly inside the native Minecraft tab list.
 
 ![Loader Menu](loader_preview.png)
 
-## Core Features
-- **Statistics Integration**: Real-time stats calculation displayed directly in-game.
-- **Tablist Enhancements**: Dynamic modifications to the network tablist.
-- **Modular ClickGUI**: Easy configuration of features, stats API endpoints, and visual overlays.
-- **Embedded Injection Engine**: Self-contained manual mapping loader with zero configuration needed.
+## Supported Clients (1.8.9)
+Cutie is built for **Minecraft 1.8.9** and natively supports:
+- **Vanilla 1.8.9**
+- **Minecraft Forge 1.8.9**
+- **Lunar Client** (OptiFine & Forge profiles)
+- **Badlion Client**
+- **LabyMod** (Vanilla & Forge setups)
+
+*Note: Other 1.8.9 clients may work, but the ones listed above are fully tested.*
+
+---
 
 ## Setup & Loading Options
 
-The release package includes both `cutie-loader.exe` and `cutie.dll`. You can load the modification using either method:
+You can load Cutie using the standalone loader executable or inject the DLL manually using your own injector.
 
 ### Option 1: Standalone Loader (Recommended)
-1. Download `cutie-loader.exe`.
-2. Launch the game client.
-3. Run `cutie-loader.exe`. It will automatically initialize, unpack the embedded DLL/configs, and inject them.
+1. Download `cutie-loader.exe` from the latest release.
+2. Launch your Minecraft client and join a world or server.
+3. Open `cutie-loader.exe`. It will automatically unpack the internal DLL and inject it.
 
-### Option 2: Custom Injection
-1. Download `cutie.dll` from the latest release.
-2. Use any standard DLL injector (e.g., Process Hacker, Cheat Engine, or a custom manual mapper).
-3. Inject `cutie.dll` into the game process.
-
----
-
-## Status Displays & Indicators
-When viewing statistics in-game or via the tablist, the following status indicators are used:
-- **NICK**: The player is nicked (using a nickname/disguise).
-- **OFF**: Statistics tracking is turned off or disabled.
-- **N/A**: Statistics are not available (e.g., a new account with all 0 stats).
+### Option 2: Manual DLL Injection
+1. Download `cutie.dll` from the release assets.
+2. Inject `cutie.dll` into your game process using any standard 64-bit injector (e.g. Process Hacker).
 
 ---
 
-## Previews & Interface
+## Logs & Troubleshooting
+
+If you run into injection issues, crashes, or rendering bugs:
+- **Loader Logs**: Saved in the folder where `cutie-loader.exe` was executed.
+- **DLL Logs**: Saved at `%userprofile%\.cutie\log.txt`.
+
+---
+
+## Tablist Status Indicators
+
+When viewing stats in-game or via the tab list:
+- **NICK**: Player is using a nickname or disguise.
+- **OFF**: Stats module is toggled off for that player or category.
+- **N/A**: Player stats are unavailable (e.g., brand-new account with 0 stats).
+
+---
+
+## Previews
 
 ### In-Game ClickGUI
 ![ClickGUI Configuration](clickgui_preview.png)
 
-### Stats API Module Configuration
+### Display Settings
 ![Stats API Config](stats_api_preview.png)
 
 ### Tablist Modification Injection
 ![Tablist Injection](tablist_injection_preview.png)
 
-### Features & Display Settings
+### Stats API Module Configuration
 ![Settings Interface](settings_preview.png)
 
 ### Live Stats Tablist Display
@@ -53,6 +67,5 @@ When viewing statistics in-game or via the tablist, the following status indicat
 
 ---
 
-## Developer Support
-For inquiries, bug reporting, or custom integration support:
-- **Discord**: `linixie.`
+## Support
+For bugs or questions, reach out on Discord: `linixie.`
