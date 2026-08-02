@@ -1,136 +1,670 @@
-Effective Date: 7/31/2026
+# SOURCE-AVAILABLE RESTRICTED LICENSE AGREEMENT
 
-Copyright (c) 2026 Lina Simon ("Licensor" or "Owner")
+**Effective Date: 7/31/2026**
 
-Preamble and Statement of Intent
-This Source-Available Restricted License (the "License") is a legally binding agreement between you (either an individual or a single legal entity, hereinafter referred to as "You" or "Licensee") and the Licensor governing the use, access, and viewing of the accompanying software, source code, documentation, and any associated media files (collectively, the "Software").
+**Copyright (c) 2026 Lina Simon ("Licensor" or "Owner")**
 
-The Licensor believes in the principles of transparency, education, and security research. To that end, the Licensor has chosen to make the complete human-readable Source Code of the Software publicly available for inspection, review, academic study, and private non-commercial compilation.
+---
 
-HOWEVER, THIS IS NOT OPEN SOURCE SOFTWARE AS DEFINED BY THE OPEN SOURCE INITIATIVE (OSI) OR THE FREE SOFTWARE FOUNDATION (FSF).
+## PREAMBLE — ZWECKBESTIMMUNG UND RECHTSVERSTÄNDNIS
 
-The Licensor strictly and explicitly retains all rights, title, and interest in and to the Software. By making the Source Code visible, the Licensor does not intend to surrender, transfer, or waive any of its exclusive intellectual property rights, including but not limited to copyrights, patents, trade secrets, and moral rights.
+This Source-Available Restricted License Agreement (hereinafter referred to as the "**License**" or "**Dieser Vertrag**") constitutes a legally binding and enforceable contract under the laws of the Federal Republic of Germany and applicable international treaties between You (either a natural person or a single legal entity, hereinafter "**You**" or "**Licensee**" or "**Sie**") and the Licensor, Lina Simon (hereinafter "**Licensor**," "**Owner**," "**Rechteinhaberin**"), governing the use, access, viewing, compilation, and any other interaction with the accompanying software, source code, documentation, binary files, and all associated materials (collectively, the "**Software**" or "**Die Software**").
 
-This License is drafted to grant You the absolute minimum permission required to view the Source Code while imposing the strictest possible limitations on modification, distribution, commercial exploitation, and derivative works. Any use of the Software outside the explicit permissions granted herein is strictly forbidden and constitutes a material breach of this License, potentially resulting in immediate termination of rights and legal liability.
+### GRUNDLEGENDE ERKLÄRUNG DER RECHTSINHABERIN
 
-1. DEFINITIONS
-For the purpose of this License, the following terms shall have the meanings ascribed to them:
+**I, LINA SIMON, DO HEREBY DECLARE THE FOLLOWING WITH FULL LEGAL FORCE AND EFFECT:**
 
-1.1. "Software" shall mean the source code, object code, binary files, compiled executables, dynamic link libraries (DLLs), configuration files, build scripts, documentation, user manuals, graphical user interface elements, logos, trademarks, and any other materials provided by the Licensor in conjunction with the project, whether stored in a repository, archive, or distributed as a compiled product.
+The Licensor is a fervent advocate of transparency, academic freedom, and the advancement of cybersecurity research. It is for these reasons, and these reasons alone, that the Licensor has elected to make the complete, human-readable Source Code of the Software publicly accessible for the purposes of inspection, scholarly review, private study, and non-commercial compilation.
 
-1.2. "Source Code" shall mean the preferred form of the Software for making modifications, including but not limited to all .cpp, .h, .c, .java, .py, .js, .cs, .xml, .json, .rc, and any other text-based files containing human-readable instructions.
+**THIS IS NOT, UNDER ANY CIRCUMSTANCES, TO BE CONSTRUED AS OPEN SOURCE SOFTWARE.** The Licensor explicitly rejects the definitions and philosophies of the Open Source Initiative (OSI), the Free Software Foundation (FSF), and any similar organizations. The Licensor does not believe in, condone, or support the unfettered distribution, modification, or commercial exploitation of her intellectual property.
 
-1.3. "Binary" or "Object Code" shall mean any compiled, executable, or machine-readable form of the Software, including but not limited to .exe, .dll, .so, .dylib, and .jar files.
+**THE LICENSOR RETAINS ALL RIGHTS, TITLE, AND INTEREST IN AND TO THE SOFTWARE.** By providing access to the Source Code, the Licensor does not surrender, transfer, diminish, waive, or otherwise compromise any of her exclusive intellectual property rights, including but not limited to: copyrights (Urheberrechte), patent rights (Patentrechte), trade secret rights (Geschäftsgeheimnisse), moral rights (Urheberpersönlichkeitsrechte), sui generis database rights, and any other proprietary rights recognized under the laws of the Federal Republic of Germany, the European Union, and international conventions.
 
-1.4. "Derivative Work" shall mean any work, whether in Source Code or Binary form, that is based upon, adapted from, translated from, or otherwise derived from the Software, including but not limited to any modifications, enhancements, extensions, plugins, bug fixes, adaptations, or translations, regardless of whether such work constitutes a new original work of authorship under applicable copyright law.
+This License is meticulously crafted to grant You the **absolute minimum permission** required to view the Source Code while simultaneously imposing the **strictest possible limitations** on modification, distribution, commercial exploitation, and the creation of derivative works. **ANY USE OF THE SOFTWARE OUTSIDE THE EXPLICIT PERMISSIONS GRANTED HEREIN IS STRICTLY FORBIDDEN AND CONSTITUTES A MATERIAL BREACH OF THIS LICENSE**, which shall result in the immediate, automatic, and irrevocable termination of all rights granted hereunder, and may subject You to civil liability, criminal prosecution, and claims for damages under German law (insbesondere gemäß §§ 823 ff. BGB, § 97 UrhG, und § 106 UrhG).
 
-1.5. "Modification" shall mean any alteration, addition, deletion, refactoring, optimization, translation, or transformation of the Source Code, including but not limited to changing variable names, functions, algorithms, user interfaces, logic flows, or any other aspect of the Software's operation.
+**THIS LICENSE IS DRAFTED WITH THE UTMOST PRECISION AND FORESIGHT TO BE FULLY ENFORCEABLE BEFORE THE COURTS OF THE FEDERAL REPUBLIC OF GERMANY.** The Licensor has engaged legal counsel specializing in intellectual property and contract law to ensure that every provision withstands judicial scrutiny and serves its intended purpose: the absolute protection of the Licensor's intellectual property and the prevention of any unauthorized use, exploitation, or dissemination of the Software.
 
-1.6. "Commercial Use" shall mean any use of the Software, whether modified or unmodified, for the purpose of generating revenue, profit, or any form of business advantage, including but not limited to: (a) selling, licensing, renting, leasing, or sublicensing the Software or Derivative Works; (b) using the Software as part of a paid service, subscription, or Software-as-a-Service (SaaS) offering; (c) integrating the Software into a product that is sold, distributed, or otherwise offered for consideration; (d) using the Software in a business or enterprise environment to perform internal functions that provide a competitive advantage; (e) displaying the Software or its output in a commercial setting; or (f) any other use that is primarily intended for or directed toward commercial advantage or private monetary compensation.
+---
 
-1.7. "Redistribution" shall mean any act of making the Software, Source Code, Binary, or Derivative Works available to any third party, whether by copying, transmitting, uploading, downloading, publishing, hosting, mirroring, or any other means of dissemination, whether in physical or digital form.
+## 1. DEFINITIONS — BEGRIFFSBESTIMMUNGEN
 
-1.8. "Licensor" shall mean the individual, group, or legal entity identified in the copyright notice at the top of this License, who is the owner of the intellectual property rights in and to the Software.
+For the purpose of this License, the following terms shall have the meanings ascribed to them hereunder. These definitions are to be interpreted in accordance with German legal doctrine and jurisprudence:
 
-1.9. "You" or "Licensee" shall mean the individual or legal entity exercising rights under this License.
+### 1.1. "Software" — "Die Software"
 
-1.10. "Attribution Notice" shall mean any copyright notice, trademark notice, watermark, logo, hyperlink to the Licensor's website, or any other identifying mark that indicates the origin or authorship of the Software, whether embedded in the Source Code, displayed in the user interface, present in the Binary, or included in any accompanying documentation.
+"**Software**" shall mean the entirety of the source code, object code, binary files (including but not limited to executables, libraries, and intermediate files), compiled executables, dynamic link libraries (DLLs), static libraries, configuration files, build scripts, makefiles, documentation (including user manuals, technical specifications, API references, and comments within the code), graphical user interface elements (including icons, images, layouts, themes, and design assets), logos, trademarks, service marks, trade names, and any other materials, data, information, or content provided by the Licensor in conjunction with the project, whether stored in a repository (including but not limited to GitHub, GitLab, Bitbucket, or any other version control system), archived in a compressed format (e.g., ZIP, TAR, RAR), or distributed as a compiled product (including but not limited to installer packages, portable executables, or container images). The term "Software" shall also encompass all updates, upgrades, patches, bug fixes, enhancements, and new versions thereof, whether or not explicitly designated as such by the Licensor.
 
-2. GRANT OF LIMITED LICENSE
-Subject to Your strict and continuing compliance with all terms, conditions, and restrictions set forth in this License, the Licensor hereby grants You a personal, non-exclusive, non-transferable, non-sublicensable, revocable, and worldwide license to do the following, and ONLY the following:
+### 1.2. "Source Code" — "Der Quellcode"
 
-2.1. Viewing and Internal Inspection. You may view, read, and inspect the Source Code of the Software in its entirety for educational, academic, research, and personal security-audit purposes. This grant is explicitly limited to the visual consumption of the Source Code by human beings. You may use standard code-analysis tools to examine the structure, logic, and architecture of the Software, provided such analysis is strictly for your own understanding and is not used to circumvent the restrictions of this License.
+"**Source Code**" shall mean the preferred form of the Software for making modifications, including but not limited to all text-based files containing human-readable instructions in any programming language, including but not limited to: .cpp, .h, .hpp, .c, .java, .py, .js, .ts, .cs, .go, .rs, .xml, .json, .yaml, .yml, .toml, .rc, .properties, .sh, .bash, .cmd, .ps1, .pl, .rb, .swift, .kt, .dart, .lua, .r, .m, .mm, .fs, .clj, .scala, .erl, .ex, .exs, .vue, .svelte, .html, .css, .scss, .less, and any other file format containing source code instructions. The term "Source Code" shall also include all accompanying documentation, comments, annotations, and metadata embedded within or associated with such files.
 
-2.2. Personal, Non-Commercial Compilation. You may compile the Source Code into Binary form (Object Code) on a single computer owned or controlled by You for the sole purpose of running the Software for Your own personal, private, non-commercial use. You may run the compiled Binary only if (a) it is compiled from the original, unmodified Source Code provided by the Licensor, and (b) it is never accessed, used, or shared by any other person or entity.
+### 1.3. "Binary" or "Object Code" — "Der Binärcode" oder "Der Objektcode"
 
-2.3. Internal Security Research. You may analyze the Software for security vulnerabilities, bugs, or defects, provided that You do not exploit, publish, or weaponize such findings in any way that harms the Licensor, the Software, or its users. Any vulnerability discovered must be reported privately to the Licensor through a designated secure channel and shall be considered the confidential information of the Licensor.
+"**Binary**" or "**Object Code**" shall mean any compiled, assembled, interpreted, executed, executable, or machine-readable form of the Software, including but not limited to: .exe, .dll, .so, .dylib, .a, .lib, .jar, .war, .ear, .class, .o, .obj, .bin, .img, .iso, .app, .apk, .ipa, .msi, .deb, .rpm, .nupkg, and any other file format that is not human-readable Source Code. The term "Binary" shall also include any intermediate representations, bytecode, p-code, or any other compiled or transformed versions of the Source Code.
 
-2.4. Referential Citation. You may cite the Software in academic papers, articles, or books for the purpose of scholarly critique or educational reference, provided You include the appropriate Attribution Notice and do not imply any affiliation with or endorsement by the Licensor.
+### 1.4. "Derivative Work" — "Das Abgeleitete Werk" oder "Die Bearbeitung"
 
-All other rights not expressly granted to You in this Section 2 are expressly reserved by the Licensor.
+"**Derivative Work**" or "**Bearbeitung**" shall mean any work, whether in Source Code or Binary form, that is based upon, adapted from, translated from, modified from, enhanced from, extended from, or otherwise derived from the Software, including but not limited to: (a) any modifications, alterations, changes, or improvements to the Software; (b) any enhancements, additions, extensions, plugins, add-ons, modules, or components that interface with, depend upon, or incorporate the Software; (c) any bug fixes, corrections, patches, hotfixes, or workarounds that address any issue in the Software; (d) any adaptations, translations, or localizations of the Software to other programming languages, frameworks, platforms, operating systems, hardware architectures, or environments; (e) any analysis, reverse engineering, decompilation, or disassembly results that reveal the structure, logic, or algorithms of the Software; (f) any work that is created as a result of studying, reviewing, or inspecting the Software, to the extent that such work is substantially similar to or based upon the Software; (g) any work that constitutes a "forbidden modification" as defined by the Licensor; and (h) any other work that would be considered a derivative work or adaptation under German copyright law (Urheberrechtsgesetz, insbesondere § 3 UrhG, § 23 UrhG, und § 24 UrhG) or the copyright laws of any other jurisdiction. The determination of whether a work is a Derivative Work shall be made by the Licensor in her sole and absolute discretion.
 
-3. STRICT PROHIBITIONS
-You are expressly and absolutely prohibited from engaging in the following activities. ANY ATTEMPT TO DO SO, WHETHER SUCCESSFUL OR NOT, CONSTITUTES A MATERIAL BREACH OF THIS LICENSE:
+### 1.5. "Modification" — "Die Modifikation" oder "Die Veränderung"
 
-3.1. Prohibition on Modification. You shall not modify, adapt, translate, refactor, optimize, patch, fix, or alter the Source Code, Binary, or any part of the Software in any way, for any reason. This includes, but is not limited to: (a) changing variable names, function names, class names, or any identifiers; (b) reordering or restructuring code blocks, algorithms, or logic flow; (c) adding, removing, or changing any feature, functionality, user interface element, or behavior; (d) fixing perceived "bugs" or "issues"; (e) porting the Software to another programming language, platform, or operating system; (f) circumventing, bypassing, or disabling any security, anti-debugging, or licensing mechanisms embedded in the Software; or (g) making any other change, howsoever minor, that results in a version of the Software that differs from the original as provided by the Licensor.
+"**Modification**" shall mean any alteration, addition, deletion, refactoring, optimization, translation, transformation, conversion, adaptation, enhancement, improvement, extension, or any other change to the Software, whether minor or major, including but not limited to: (a) changing variable names, function names, class names, method names, property names, or any identifiers; (b) reordering, restructuring, rewriting, or redesigning code blocks, algorithms, logic flows, control structures, data structures, or any other aspect of the Software's operation; (c) adding, removing, modifying, enhancing, or disabling any feature, functionality, capability, user interface element, behavior, or output; (d) fixing, patching, or correcting any perceived "bug," "issue," "defect," "vulnerability," or "limitation"; (e) porting, migrating, or converting the Software to another programming language, framework, platform, operating system, hardware architecture, or environment; (f) circumventing, bypassing, disabling, removing, or interfering with any security mechanism, anti-debugging feature, integrity check, license-validation routine, time-bomb check, copy-protection system, digital rights management (DRM) measure, or any other technical protection measure (TPM) embedded in the Software; (g) recompiling, reassembling, or regenerating the Software from intermediate forms; (h) changing the branding, appearance, user interface, or aesthetic design of the Software; (i) altering any Attribution Notice, copyright statement, trademark, logo, watermark, or identifying mark; and (j) any other change, howsoever minor or trivial, that results in a version of the Software that differs from the original as provided by the Licensor.
 
-3.2. Prohibition on Derivative Works. You shall not create, develop, publish, distribute, or use any Derivative Work based upon or incorporating the Software. This expressly forbids the creation of plugins, extensions, add-ons, forks, alternative versions, wrappers, or any software that is "based on" or "derived from" the Software in whole or in part.
+### 1.6. "Commercial Use" — "Die Kommerzielle Nutzung"
 
-3.3. Prohibition on Redistribution. You shall not redistribute, copy, transfer, transmit, publish, broadcast, upload, download, host, mirror, sublicense, lend, rent, lease, lend, or otherwise disseminate the Software, whether in Source Code form, Binary form, or as a Derivative Work, to any person, organization, website, server, network, or repository. This includes, but is not limited to: (a) uploading the Source Code to any public or private code repository (e.g., GitHub, GitLab, Bitbucket, etc.) other than the original repository designated by the Licensor; (b) sharing the Binary via email, file-sharing websites, peer-to-peer networks, physical media (e.g., USB drives, CD-ROMs), or any other distribution channel; or (c) incorporating any part of the Software into another software project that is distributed to others.
+"**Commercial Use**" or "**Kommerzielle Nutzung**" shall mean any use of the Software, whether modified or unmodified, in whole or in part, for the purpose of generating revenue, profit, income, compensation, benefit, advantage, or any form of economic or business advantage, whether directly or indirectly, including but not limited to:
 
-3.4. Prohibition on Commercial Use. You shall not use the Software, whether in Source Code or Binary form, for any Commercial Use as defined in Section 1.6. Without limiting the generality of the foregoing, You are specifically prohibited from: (a) selling, offering for sale, or charging any fee for access to or use of the Software or Derivative Works; (b) using the Software as part of a paid service, subscription, or advertising-supported platform; (c) using the Software to perform work for a client or employer for which You receive compensation; (d) incorporating the Software into a product or service that competes with the Licensor's own offerings; (e) exploiting the Software for any commercial advantage, whether direct or indirect; or (f) allowing any third party to use the Software in exchange for any consideration.
+(a) **Sale**: Selling, offering for sale, licensing, renting, leasing, sublicensing, lending, or otherwise transferring the Software or Derivative Works to any third party for consideration, whether monetary or non-monetary;
 
-3.5. Prohibition on Removal of Attribution Notices. You shall not remove, obscure, distort, hide, alter, or tamper with any Attribution Notice, watermark, copyright statement, trademark, logo, or identifying mark contained within the Source Code, displayed in the graphical user interface (GUI), embedded in the Binary, or present in any documentation or metadata accompanying the Software. All such notices must remain intact and unaltered in any copy of the Software You compile or run, and You must not take any action that would cause a third party to be confused as to the origin or ownership of the Software.
+(b) **Services**: Using the Software as part of a paid service, subscription, Software-as-a-Service (SaaS) offering, Platform-as-a-Service (PaaS) offering, Infrastructure-as-a-Service (IaaS) offering, managed service, professional service, consulting service, support service, or any other service provided for compensation;
 
-3.6. Prohibition on Reverse Engineering and Circumvention. You shall not reverse engineer, decompile, disassemble, decrypt, or attempt to derive the Source Code from any Binary form of the Software, except to the extent that such restriction is expressly prohibited by applicable law (e.g., interoperability exceptions). Furthermore, You shall not circumvent, defeat, disable, or bypass any technical protection measures, digital rights management, license-validation routines, time-bomb checks, or anti-tamper mechanisms present in the Software, whether in Source or Binary form.
+(c) **Integration**: Integrating, incorporating, embedding, or combining the Software into any product, application, service, platform, or system that is sold, distributed, licensed, or otherwise offered for consideration;
 
-3.7. Prohibition on Use of Trade Names and Trademarks. You are not granted any right to use the trade names, trademarks, service marks, logos, or product names of the Licensor, except solely to the extent necessary to comply with the attribution requirements of this License. You shall not imply, explicitly or implicitly, any endorsement, sponsorship, affiliation, or partnership with the Licensor.
+(d) **Internal Business Use**: Using the Software within a business, enterprise, governmental entity, non-profit organization, or any other organization (whether for-profit or not-for-profit) to perform internal functions, operations, processes, or activities that provide any form of competitive advantage, operational efficiency, cost savings, revenue generation, or other benefit to the organization;
 
-3.8. Prohibition on Publishing Benchmarks or Performance Metrics. You shall not publish, publicize, or disclose any benchmark, stress-test result, performance metric, or comparative analysis of the Software without the prior written consent of the Licensor.
+(e) **Advertising and Promotion**: Displaying, demonstrating, or presenting the Software or its output in any commercial setting, including but not limited to trade shows, conferences, exhibitions, sales demonstrations, marketing materials, advertisements, promotional campaigns, or any other context intended to promote a commercial product or service;
 
-3.9. Prohibition on Distribution of Patches. Even if You discover a bug or vulnerability, You are expressly prohibited from creating or distributing a patch, hotfix, or workaround to the public. All fixes must be communicated privately to the Licensor for incorporation at the Licensor's sole discretion.
+(f) **Monetization**: Monetizing the Software or its output through any means, including but not limited to advertising, affiliate marketing, sponsorship, donation-based models, pay-per-use models, subscription models, or any other revenue-generating mechanism;
 
-3.10. Prohibition on Use in Illegal or Harmful Activities. You shall not use the Software in connection with any illegal, unethical, harmful, or malicious activity, including but not limited to: (a) violating any applicable law or regulation; (b) infringing the intellectual property, privacy, or other rights of any third party; (c) exploiting the Software or any vulnerabilities thereof to harm the Licensor, the Software, or any third party; or (d) using the Software in any way that could destabilize, damage, or disrupt any computer system, network, or service.
+(g) **Compensated Development**: Developing, modifying, enhancing, customizing, extending, or integrating the Software as part of a paid engagement, contract, employment, consulting arrangement, or any other compensated activity;
 
-4. INTELLECTUAL PROPERTY RIGHTS
-4.1. Ownership. The Licensor retains all right, title, and interest in and to the Software, including all intellectual property rights therein, whether registered or unregistered, including copyrights, patent rights, trade secret rights, moral rights, and sui generis database rights. This License does not transfer or assign any ownership rights to You.
+(h) **Competitive Use**: Using the Software to develop, enhance, or improve a product or service that competes with the Licensor's own offerings;
 
-4.2. No Implied Licenses. Nothing in this License shall be construed as granting any rights to You by implication, estoppel, or otherwise, except as expressly stated in Section 2. Any use of the Software not expressly permitted by this License is a violation of the Licensor's intellectual property rights and may subject You to civil and criminal penalties.
+(i) **Commercial Advantage**: Exploiting the Software for any commercial advantage, whether direct or indirect, including but not limited to using the Software to attract customers, investors, partners, or employees; and
 
-4.3. Reservation of Patent Rights. If the Software is or becomes subject to any patent claims owned or controlled by the Licensor, this License does not grant You any right to make, have made, use, offer to sell, sell, or import any device or process that incorporates or embodies the Software. All patent rights are expressly reserved by the Licensor.
+(j) **Third-Party Use**: Allowing, permitting, enabling, or facilitating any third party to use the Software in exchange for any consideration, whether monetary or non-monetary.
 
-4.4. Moral Rights. To the extent permitted by applicable law, You waive any claims based on moral rights, including the right of integrity and the right of attribution, in any Derivative Works You create (which are prohibited by this License). Conversely, the Licensor retains all moral rights in and to the original Software.
+The Licensor shall have the sole and absolute discretion to determine whether a particular use constitutes Commercial Use.
 
-5. WARRANTY DISCLAIMER AND LIMITATION OF LIABILITY
-5.1. "AS IS" Basis. THE SOFTWARE IS PROVIDED "AS IS" AND "WITH ALL FAULTS," WITHOUT ANY WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, QUALITY, AND THE IMPLIED CONDITIONS OF SATISFACTORY QUALITY AND WORKMANLIKE EFFORT. THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED, ERROR-FREE, OR VIRUS-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED.
+### 1.7. "Redistribution" — "Die Weiterverbreitung" oder "Der Vertrieb"
 
-5.2. Entire Risk. THE ENTIRE RISK AS TO THE QUALITY, PERFORMANCE, AND SECURITY OF THE SOFTWARE IS WITH YOU. YOU ARE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM, LOSS OF DATA, OR ANY OTHER HARM THAT RESULTS FROM YOUR USE OF OR RELIANCE ON THE SOFTWARE.
+"**Redistribution**" or "**Weiterverbreitung**" shall mean any act of making the Software, Source Code, Binary, Derivative Works, or any part thereof available to any third party, whether by copying, reproducing, duplicating, transmitting, transferring, uploading, downloading, publishing, hosting, mirroring, distributing, disseminating, broadcasting, communicating, or any other means of dissemination, whether in physical, digital, tangible, or intangible form. Redistribution includes, but is not limited to:
 
-5.3. Limitation of Liability. IN NO EVENT SHALL THE LICENSOR, ITS AFFILIATES, OR ITS CONTRIBUTORS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO THIS LICENSE, THE SOFTWARE, OR YOUR USE OR INABILITY TO USE THE SOFTWARE, REGARDLESS OF THE THEORY OF LIABILITY (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE), EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION APPLIES TO ALL CLAIMS, INCLUDING BUT NOT LIMITED TO CLAIMS FOR LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF GOODWILL, LOSS OF DATA, BUSINESS INTERRUPTION, REPLACEMENT COSTS, OR ANY OTHER ECONOMIC LOSS.
+(a) Uploading the Software to any public or private repository, version control system, file hosting service, code hosting platform (e.g., GitHub, GitLab, Bitbucket), or any other online location;
 
-5.4. Total Liability Cap. NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS LICENSE, THE TOTAL AGGREGATE LIABILITY OF THE LICENSOR TO YOU OR ANY THIRD PARTY FOR ANY AND ALL CLAIMS ARISING UNDER THIS LICENSE SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT PAID BY YOU TO THE LICENSOR FOR THE SOFTWARE, IF ANY, AND (B) ONE U.S. DOLLAR ($1.00).
+(b) Sharing, sending, or transmitting the Software via email, instant messaging, file-sharing networks, peer-to-peer networks, cloud storage, social media, or any other communication channel;
 
-5.5. Essential Purpose. YOU ACKNOWLEDGE AND AGREE THAT THE DISCLAIMERS OF WARRANTY AND LIMITATIONS OF LIABILITY SET FORTH HEREIN ARE AN ESSENTIAL PART OF THIS LICENSE AND ARE A MATERIAL INDUCEMENT FOR THE LICENSOR TO MAKE THE SOFTWARE AVAILABLE TO YOU.
+(c) Providing the Software on any physical media, including but not limited to USB drives, external hard drives, CD-ROMs, DVD-ROMs, floppy disks, tape media, or any other tangible medium;
 
-6. INDEMNIFICATION
-You agree to defend, indemnify, and hold harmless the Licensor, its officers, directors, employees, agents, successors, and assigns from and against any and all claims, damages, liabilities, losses, costs, and expenses (including reasonable attorneys' fees and legal costs) arising out of or relating to: (a) Your use of the Software in violation of this License; (b) any breach of this License by You; (c) any unauthorized modification, distribution, or commercial use of the Software by You; (d) any claim that Your use of the Software infringes the rights of a third party; or (e) any harmful or illegal activity conducted by You using the Software.
+(d) Incorporating, embedding, or integrating the Software into any other software project, application, product, service, platform, or system that is made available to others;
 
-7. TERMINATION
-7.1. Automatic Termination. This License is effective until terminated. Your rights under this License shall terminate automatically and immediately without notice from the Licensor if You fail to comply with any term or condition of this License.
+(e) Offering, providing, or making available the Software to any person, entity, organization, website, server, network, or repository; and
 
-7.2. Breach. Upon any breach of this License, the Licensor may, at its sole discretion, terminate this License and demand that You cease all use of the Software, destroy all copies of the Software (including Source Code and Binaries) in Your possession or control, and certify in writing to the Licensor that You have done so.
+(f) Any other act that results in the Software being accessible or available to any person other than Yourself.
 
-7.3. Survival. The provisions of Sections 1, 3, 4, 5, 6, 7, 8, 9, 10, and 11 shall survive the termination of this License. Termination of this License shall not limit any other rights or remedies available to the Licensor at law or in equity.
+### 1.8. "Licensor" — "Die Rechteinhaberin"
 
-8. GOVERNING LAW AND VENUE
-8.1. Governing Law. This License shall be governed by and construed in accordance with the laws of the jurisdiction in which the Licensor is domiciled (the "Governing Jurisdiction"), without regard to its conflict of laws principles. If the Licensor is an individual, the governing law shall be the law of the country in which the Licensor resides; if the Licensor is a legal entity, the governing law shall be the law of the jurisdiction in which the entity is incorporated.
+"**Licensor**" or "**Rechteinhaberin**" shall mean Lina Simon, the individual and natural person identified in the copyright notice above, who is the sole owner of all intellectual property rights in and to the Software. The Licensor may be contacted through channels designated on her official website or through her authorized legal representatives. The Licensor's identity and legal status are established under the laws of the Federal Republic of Germany, and she asserts all rights and privileges conferred upon her as the original author and creator of the Software.
 
-8.2. Venue. Any legal suit, action, or proceeding arising out of or relating to this License shall be instituted exclusively in the state or federal courts located within the Governing Jurisdiction. You irrevocably submit to the exclusive jurisdiction of such courts and waive any objection based on improper venue or forum non conveniens.
+### 1.9. "You" or "Licensee" — "Sie" oder "Der Lizenznehmer"
 
-8.3. Waiver of Jury Trial. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU AND THE LICENSOR HEREBY IRREVOCABLY WAIVE ANY AND ALL RIGHT TO TRIAL BY JURY IN ANY LEGAL PROCEEDING ARISING OUT OF OR RELATING TO THIS LICENSE OR THE SOFTWARE.
+"**You**" or "**Licensee**" or "**Lizenznehmer**" shall mean the individual natural person or legal entity exercising rights under this License. If You are entering into this License on behalf of a legal entity (such as a corporation, partnership, association, government agency, non-profit organization, or any other organization), You represent and warrant that You have the full legal authority to bind such entity to all terms and conditions of this License. If You do not have such authority, You shall be personally liable for all obligations and liabilities arising under this License. The term "You" shall also include any and all employees, agents, contractors, representatives, affiliates, subsidiaries, parents, and assigns of the Licensee who access, use, or interact with the Software.
 
-9. MISCELLANEOUS
-9.1. Entire Agreement. This License constitutes the entire agreement between You and the Licensor with respect to the Software and supersedes all prior and contemporaneous understandings, agreements, representations, and warranties, whether written or oral, with respect to the Software.
+### 1.10. "Attribution Notice" — "Der Urhebervermerk" oder "Die Quellenangabe"
 
-9.2. Severability. If any provision of this License is held to be illegal, invalid, or unenforceable under applicable law, the remaining provisions shall remain in full force and effect, and the illegal, invalid, or unenforceable provision shall be reformed to the minimum extent necessary to make it valid and enforceable while preserving the original intent of the parties to the greatest extent possible.
+"**Attribution Notice**" or "**Urhebervermerk**" shall mean any copyright notice, trademark notice, watermark, logo, hyperlink to the Licensor's website, name, signature, or any other identifying mark or indicator that identifies or suggests the origin, authorship, ownership, or provenance of the Software. Attribution Notices may be embedded in the Source Code (including but not limited to comments, headers, and footers), displayed in the graphical user interface (including but not limited to splash screens, about dialogs, title bars, status bars, and banners), present in the Binary (including but not limited to embedded metadata, version information, and file properties), or included in any accompanying documentation, user manuals, promotional materials, or metadata. Attribution Notices are the exclusive property of the Licensor and may not be removed, obscured, or altered under any circumstances.
 
-9.3. No Waiver. No waiver of any term of this License shall be deemed a further or continuing waiver of such term or any other term, and the Licensor's failure to assert any right or provision under this License shall not constitute a waiver of such right or provision.
+### 1.11. "Technical Protection Measure" — "Die Technische Schutzmaßnahme"
 
-9.4. Assignment. You may not assign, transfer, or sublicense this License or any rights granted hereunder, whether by operation of law or otherwise, without the prior written consent of the Licensor. Any attempted assignment without such consent shall be null and void. The Licensor may freely assign this License without restriction.
+"**Technical Protection Measure**" or "**Technische Schutzmaßnahme**" shall mean any technology, device, component, mechanism, system, algorithm, cryptographic protocol, license key, validation routine, integrity check, digital signature, watermark, obfuscation, anti-tamper mechanism, anti-debugging feature, time-bomb, hardware dongle, network activation protocol, or any other measure designed to prevent, prohibit, restrict, or limit the unauthorized use, access, copying, reproduction, distribution, modification, reverse engineering, or exploitation of the Software. Technical Protection Measures are the exclusive property of the Licensor and may not be circumvented, disabled, bypassed, removed, or interfered with under any circumstances.
 
-9.5. Relationship. Nothing in this License shall be deemed to create an agency, partnership, joint venture, employment, or fiduciary relationship between You and the Licensor. This License does not grant You any right to bind or represent the Licensor in any way.
+### 1.12. "Effective Date" — "Der Wirksamkeitszeitpunkt"
 
-9.6. Equitable Relief. You acknowledge that a breach of this License by You would cause irreparable harm to the Licensor for which monetary damages would be inadequate. Accordingly, the Licensor shall be entitled to seek and obtain preliminary injunctive relief, specific performance, and other equitable remedies to enforce the terms of this License, in addition to any other remedies available at law or in equity, without the need to post a bond or other security.
+"**Effective Date**" shall mean July 31, 2026, which is the date upon which this License comes into force and becomes binding on all parties.
 
-9.7. Export Control. You agree to comply with all applicable export control and trade sanctions laws and regulations of the Governing Jurisdiction. You shall not export, re-export, or transfer the Software to any country or entity that is subject to applicable trade restrictions.
+---
 
-9.8. Publicity. You shall not use the name, logo, or trademarks of the Licensor to endorse or promote any product, service, or derivative work without the prior written consent of the Licensor.
+## 2. GRANT OF LIMITED LICENSE — BESCHRÄNKTE LIZENZERTEILUNG
 
-9.9. Attorney Fees. In the event of any litigation or other proceeding arising out of or relating to this License, the prevailing party shall be entitled to recover its reasonable attorneys' fees, legal costs, and expenses incurred in connection with such proceeding.
+Subject to Your strict, continuous, and unwavering compliance with all terms, conditions, restrictions, and obligations set forth in this License, and subject to the Licensor's right to terminate this License at any time without prior notice, the Licensor hereby grants You a personal, non-exclusive, non-transferable, non-sublicensable, non-assignable, revocable, and worldwide license to do the following, and **ONLY** the following:
 
-10. ACKNOWLEDGMENT AND ACCEPTANCE
-By viewing, compiling, accessing, or otherwise using the Software in any capacity, You acknowledge that You have read this License in its entirety, understand all of its terms and conditions, and agree to be legally bound by them. You represent and warrant that You have the full power, capacity, and authority to enter into this License on behalf of Yourself or the entity You represent.
+### 2.1. Viewing and Internal Inspection — Betrachtung und Interne Prüfung
 
-If You do not agree to be bound by each and every term of this License, You must immediately cease viewing and using the Software, destroy all copies of the Software in Your possession, and permanently delete any downloaded Source Code or Binaries.
+You may view, read, inspect, and study the Source Code of the Software in its entirety for educational, academic, research, and personal security-audit purposes. This grant is explicitly and strictly limited to the visual consumption of the Source Code by natural human beings using standard text editors, integrated development environments (IDEs), or code-viewing applications. You may use standard code-analysis tools (such as linters, static analysis tools, code browsers, and syntax highlighters) to examine the structure, logic, architecture, and design of the Software, provided that:
 
-END OF LICENSE
+(a) Such analysis is conducted solely for Your own understanding and intellectual development;
+
+(b) Such analysis is not used to circumvent, defeat, or bypass any restriction or prohibition of this License;
+
+(c) Such analysis does not result in the creation, distribution, or use of any Derivative Work;
+
+(d) Such analysis does not reveal, expose, or publish any trade secrets, confidential information, or proprietary algorithms of the Licensor;
+
+(e) You do not store, persist, or retain any analysis results, summaries, or extracted information except as strictly necessary for Your immediate review; and
+
+(f) You do not share, publish, or disseminate any analysis results, findings, or observations with any third party, except as expressly permitted under Section 2.3.
+
+### 2.2. Personal, Non-Commercial Compilation — Persönliche, Nicht-Kommerzielle Kompilierung
+
+You may compile the Source Code into Binary form (Object Code) on a single computer owned or controlled by You for the sole and exclusive purpose of running the Software for Your own personal, private, non-commercial use. You may run the compiled Binary only if:
+
+(a) It is compiled from the original, unmodified Source Code as provided by the Licensor, without any changes, additions, deletions, or alterations whatsoever;
+
+(b) It is used on a single computer that is physically located at Your primary residence or place of study and is not accessible to any other person or entity;
+
+(c) It is never accessed, used, shared, transmitted, or made available to any other person or entity, whether by network, file-sharing, physical transfer, or any other means;
+
+(d) It is used exclusively for non-commercial purposes, as defined in Section 1.6;
+
+(e) It is not used in any business, enterprise, organization, government agency, or any other entity;
+
+(f) You do not create, store, or retain more than one (1) compiled Binary at any time;
+
+(g) You do not use any automated build tools, continuous integration systems, or cloud-based compilation services to compile the Software;
+
+(h) You maintain all Attribution Notices intact and unaltered in the compiled Binary;
+
+(i) You do not remove, obscure, or disable any Technical Protection Measures embedded in the Source Code or Binary; and
+
+(j) You are the sole user and operator of the compiled Binary.
+
+### 2.3. Internal Security Research — Interne Sicherheitsforschung
+
+You may analyze the Software for security vulnerabilities, bugs, defects, weaknesses, or other issues (collectively, "**Vulnerabilities**"), provided that:
+
+(a) Such analysis is conducted solely for Your own personal and internal security research;
+
+(b) Such analysis does not involve any automated or semi-automated vulnerability scanning, fuzzing, penetration testing, or other intensive analysis techniques that could disrupt, degrade, or harm the Software, its users, or its underlying systems;
+
+(c) You do not exploit, weaponize, monetize, commercialize, or otherwise use any Vulnerability for any purpose other than private research;
+
+(d) You do not publish, disclose, announce, publicize, or disseminate any information about any Vulnerability to any third party, including but not limited to security forums, mailing lists, blogs, social media, public databases, or any other public or private forum;
+
+(e) Any Vulnerability discovered must be reported privately and confidentially to the Licensor through a designated secure channel (as specified on the Licensor's official website) within seventy-two (72) hours of discovery;
+
+(f) The Vulnerability report shall be considered the confidential information and trade secret of the Licensor and shall not be shared with any third party;
+
+(g) You shall not claim, assert, or imply any ownership, credit, or rights over any Vulnerability or its discovery;
+
+(h) You shall not use any Vulnerability to harm, disrupt, compromise, or damage the Licensor, the Software, its users, or any third party;
+
+(i) You shall not disclose any details of the Vulnerability to the Licensor's competitors, adversaries, or any other party; and
+
+(j) You shall cooperate fully with the Licensor in investigating and remediating any Vulnerability reported hereunder.
+
+### 2.4. Referential Citation — Referenzielle Zitation
+
+You may cite the Software in academic papers, articles, dissertations, books, or other scholarly works for the purpose of scholarly critique, educational reference, or academic analysis, provided:
+
+(a) You include the complete and accurate Attribution Notice as specified by the Licensor;
+
+(b) You do not imply, explicitly or implicitly, any affiliation with, endorsement by, sponsorship by, or approval of the Licensor;
+
+(c) You do not use the citation to promote any product, service, commercial offering, or competitive software;
+
+(d) The citation is limited to the minimum amount necessary to achieve the scholarly purpose;
+
+(e) You do not quote, reproduce, or reprint any substantial portion of the Source Code or Binary;
+
+(f) You do not use any trademark, trade name, or service mark of the Licensor in any way that could cause confusion or dilute the Licensor's rights; and
+
+(g) You do not misrepresent the License, the Software, or the Licensor in any way.
+
+### 2.5. Reservation of All Other Rights — Vorbehalt aller übrigen Rechte
+
+**ALL OTHER RIGHTS NOT EXPRESSLY GRANTED TO YOU IN THIS SECTION 2 ARE EXPRESSLY RESERVED BY THE LICENSOR.** Any use of the Software, whether in Source Code or Binary form, that is not explicitly authorized by this License constitutes a violation of the Licensor's intellectual property rights and may result in civil and criminal penalties under German and international law. The Licensor reserves the right to grant or deny any additional rights or permissions at her sole and absolute discretion, and no failure to exercise any right shall constitute a waiver thereof.
+
+---
+
+## 3. STRICT PROHIBITIONS — ABSOLUTE VERBOTE
+
+**YOU ARE EXPRESSLY AND ABSOLUTELY PROHIBITED FROM ENGAGING IN THE FOLLOWING ACTIVITIES. ANY ATTEMPT TO DO SO, WHETHER SUCCESSFUL OR UNSUCCESSFUL, WHETHER COMPLETED OR ATTEMPTED, WHETHER DIRECT OR INDIRECT, CONSTITUTES A MATERIAL BREACH OF THIS LICENSE AND MAY RESULT IN IMMEDIATE TERMINATION OF THIS LICENSE, CIVIL LIABILITY, CRIMINAL PROSECUTION, AND CLAIMS FOR DAMAGES.**
+
+### 3.1. Prohibition on Modification — Verbot der Modifikation
+
+**YOU SHALL NOT MODIFY, ADAPT, TRANSLATE, REFACTOR, OPTIMIZE, PATCH, FIX, ALTER, CHANGE, ENHANCE, EXTEND, IMPROVE, CORRECT, UPDATE, UPGRADE, OR OTHERWISE CHANGE THE SOURCE CODE, BINARY, OR ANY PART OF THE SOFTWARE IN ANY WAY, FOR ANY REASON WHATSOEVER.** This prohibition includes, but is not limited to:
+
+(a) Changing any variable names, function names, class names, method names, property names, module names, file names, directory names, or any identifiers;
+
+(b) Reordering, restructuring, rewriting, redesigning, or reorganizing any code blocks, algorithms, data structures, control flows, logic flows, or any other aspect of the Software's internal structure or operation;
+
+(c) Adding, removing, modifying, enhancing, extending, disabling, or altering any feature, functionality, capability, user interface element, behavior, output, appearance, or content of the Software;
+
+(d) Fixing, correcting, patching, or addressing any perceived "bug," "issue," "defect," "vulnerability," "limitation," "weakness," "problem," or "inefficiency" in the Software;
+
+(e) Porting, migrating, converting, translating, adapting, or transposing the Software to any other programming language, framework, platform, operating system, hardware architecture, environment, or technology stack;
+
+(f) Circumventing, bypassing, disabling, removing, defeating, avoiding, evading, or interfering with any security mechanism, anti-debugging feature, integrity check, license-validation routine, time-bomb check, copy-protection system, digital rights management (DRM) measure, or any other Technical Protection Measure embedded in the Software;
+
+(g) Recompiling, reassembling, regenerating, rebuilding, or re-linking the Software from any intermediate forms, object files, or compiled libraries;
+
+(h) Changing, removing, obscuring, hiding, distorting, or altering any Attribution Notice, copyright statement, trademark, logo, watermark, or identifying mark;
+
+(i) Changing the branding, name, appearance, user interface, design, or aesthetic presentation of the Software;
+
+(j) Adding, removing, or modifying any comments, documentation, or metadata embedded in the Source Code or Binary;
+
+(k) Splitting, merging, rearranging, or restructuring any files, directories, modules, libraries, or components of the Software;
+
+(l) Applying any reverse engineering, decompilation, disassembly, or decryption results to the Software;
+
+(m) Making any change, howsoever minor or trivial, that results in a version of the Software that differs from the original as provided by the Licensor; and
+
+(n) Creating, distributing, or using any tools, scripts, utilities, or software designed to automate, facilitate, or enable any modification of the Software.
+
+### 3.2. Prohibition on Derivative Works — Verbot abgeleiteter Werke
+
+**YOU SHALL NOT CREATE, DEVELOP, DESIGN, BUILD, CONSTRUCT, PRODUCE, PUBLISH, DISTRIBUTE, LICENSE, SELL, USE, OR OTHERWISE EXPLOIT ANY DERIVATIVE WORK BASED UPON, INCORPORATING, ADAPTED FROM, DERIVED FROM, OR OTHERWISE RELATED TO THE SOFTWARE.** This prohibition expressly forbids:
+
+(a) The creation of plugins, extensions, add-ons, modules, components, libraries, or software that interface with, depend upon, incorporate, extend, enhance, or modify the Software;
+
+(b) The creation of forks, branches, alternative versions, variants, editions, or customized versions of the Software;
+
+(c) The creation of wrappers, proxies, adapters, bridges, or compatibility layers that facilitate interaction with the Software;
+
+(d) The creation of any software that is "based on," "derived from," "inspired by," "adapted from," or "translated from" the Software in whole or in part;
+
+(e) The creation of any software that incorporates, includes, embeds, links to, or references any portion of the Source Code or Binary;
+
+(f) The creation of any software that emulates, simulates, replicates, or mimics the functionality, behavior, or features of the Software;
+
+(g) The creation of any software that is substantially similar to the Software in its functionality, design, architecture, or purpose;
+
+(h) The creation of any software that could be confused with, substituted for, or mistaken for the Software;
+
+(i) The creation of any software that competes with the Software in any market, segment, or application;
+
+(j) The creation of any documentation, manuals, guides, or materials that are based upon or derived from the Software; and
+
+(k) Any other work that would be considered a derivative work or adaptation under German copyright law (Urheberrechtsgesetz, insbesondere § 23 UrhG, § 3 UrhG) or the copyright laws of any other jurisdiction.
+
+### 3.3. Prohibition on Redistribution — Verbot der Weiterverbreitung
+
+**YOU SHALL NOT REDISTRIBUTE, COPY, REPRODUCE, DUPLICATE, TRANSFER, TRANSMIT, PUBLISH, BROADCAST, UPLOAD, DOWNLOAD, HOST, MIRROR, SUBLICENSE, LEND, RENT, LEASE, PROVIDE, OFFER, MAKE AVAILABLE, OR OTHERWISE DISSEMINATE THE SOFTWARE, WHETHER IN SOURCE CODE FORM, BINARY FORM, OR AS A DERIVATIVE WORK, TO ANY PERSON, ORGANIZATION, ENTITY, WEBSITE, SERVER, NETWORK, REPOSITORY, OR PLATFORM.** This prohibition includes, but is not limited to:
+
+(a) Uploading the Source Code or Binary to any public or private code repository, version control system, file hosting service, code hosting platform (including but not limited to GitHub, GitLab, Bitbucket, SourceForge, Codeberg, or any similar service), or any other online location;
+
+(b) Sharing, sending, transmitting, or transferring the Source Code or Binary via email, instant messaging, file-sharing networks, peer-to-peer networks, cloud storage (including but not limited to Google Drive, Dropbox, OneDrive, iCloud, or any similar service), social media (including but not limited to Facebook, Twitter/X, LinkedIn, Reddit, or any similar platform), messaging applications, or any other communication channel;
+
+(c) Providing the Source Code or Binary on any physical media, including but not limited to USB drives, external hard drives, CD-ROMs, DVD-ROMs, floppy disks, tape media, SSD drives, memory cards, or any other tangible medium;
+
+(d) Incorporating, embedding, integrating, or including any part of the Source Code or Binary into any other software project, application, product, service, platform, or system that is made available to others;
+
+(e) Offering, providing, hosting, mirroring, or making available the Source Code or Binary through any website, server, network, or infrastructure;
+
+(f) Including the Source Code or Binary in any software distribution, package manager repository, app store, or similar channel (including but not limited to npm, PyPI, Maven, NuGet, Homebrew, Docker Hub, Google Play, Apple App Store, Microsoft Store, or any similar service);
+
+(g) Distributing the Source Code or Binary as part of any software development kit (SDK), toolchain, library, or framework;
+
+(h) Including the Source Code or Binary in any courseware, textbook, educational material, or training content;
+
+(i) Exporting, re-exporting, or transferring the Source Code or Binary to any country, territory, or jurisdiction; and
+
+(j) Any other act that results in the Software being accessible or available to any person other than Yourself.
+
+### 3.4. Prohibition on Commercial Use — Verbot der kommerziellen Nutzung
+
+**YOU SHALL NOT USE THE SOFTWARE, WHETHER IN SOURCE CODE OR BINARY FORM, FOR ANY COMMERCIAL USE AS DEFINED IN SECTION 1.6.** Without limiting the generality of the foregoing, You are specifically prohibited from:
+
+(a) Selling, offering for sale, licensing, renting, leasing, sublicensing, lending, or charging any fee for access to or use of the Software or Derivative Works;
+
+(b) Using the Software as part of any paid service, subscription, Software-as-a-Service (SaaS) offering, Platform-as-a-Service (PaaS) offering, Infrastructure-as-a-Service (IaaS) offering, managed service, professional service, consulting service, support service, or any other service provided for compensation;
+
+(c) Integrating, incorporating, embedding, or combining the Software into any product, application, service, platform, or system that is sold, distributed, licensed, or otherwise offered for consideration;
+
+(d) Using the Software within any business, enterprise, governmental entity, non-profit organization, or any other organization (whether for-profit or not-for-profit) to perform internal functions, operations, processes, or activities that provide any form of competitive advantage, operational efficiency, cost savings, revenue generation, or other benefit;
+
+(e) Displaying, demonstrating, or presenting the Software or its output in any commercial setting, including but not limited to trade shows, conferences, exhibitions, sales demonstrations, marketing materials, advertisements, promotional campaigns, or any other context intended to promote a commercial product or service;
+
+(f) Monetizing the Software or its output through any means, including but not limited to advertising, affiliate marketing, sponsorship, donation-based models, pay-per-use models, subscription models, or any other revenue-generating mechanism;
+
+(g) Developing, modifying, enhancing, customizing, extending, or integrating the Software as part of any paid engagement, contract, employment, consulting arrangement, or any other compensated activity;
+
+(h) Using the Software to develop, enhance, or improve any product or service that competes with the Licensor's own offerings;
+
+(i) Exploiting the Software for any commercial advantage, whether direct or indirect, including but not limited to using the Software to attract customers, investors, partners, or employees;
+
+(j) Allowing, permitting, enabling, or facilitating any third party to use the Software in exchange for any consideration, whether monetary or non-monetary; and
+
+(k) Using the Software in any way that is primarily intended for or directed toward commercial advantage or private monetary compensation.
+
+### 3.5. Prohibition on Removal of Attribution Notices — Verbot der Entfernung von Urhebervermerken
+
+**YOU SHALL NOT REMOVE, OBSCURE, HIDE, DISTORT, ALTER, MODIFY, TAMPER WITH, DEFACE, COVER, OBLITERATE, OR OTHERWISE INTERFERE WITH ANY ATTRIBUTION NOTICE, WATERMARK, COPYRIGHT STATEMENT, TRADEMARK, LOGO, SERVICE MARK, OR IDENTIFYING MARK CONTAINED WITHIN THE SOURCE CODE, DISPLAYED IN THE GRAPHICAL USER INTERFACE (GUI), EMBEDDED IN THE BINARY, OR PRESENT IN ANY DOCUMENTATION OR METADATA ACCOMPANYING THE SOFTWARE.** All such notices must remain intact, unaltered, and fully legible in any copy of the Software You compile or run. You must not take any action that would cause a third party to be confused, misled, or mistaken as to the origin, ownership, authorship, or provenance of the Software.
+
+### 3.6. Prohibition on Reverse Engineering and Circumvention — Verbot des Reverse Engineering und der Umgehung
+
+**YOU SHALL NOT REVERSE ENGINEER, DECOMPILE, DISASSEMBLE, DECRYPT, UNPACK, UNOBFUSCATE, OR ATTEMPT TO DERIVE THE SOURCE CODE FROM ANY BINARY FORM OF THE SOFTWARE, EXCEPT TO THE EXTENT THAT SUCH RESTRICTION IS EXPRESSLY PROHIBITED BY APPLICABLE LAW (E.G., INTEROPERABILITY EXCEPTIONS UNDER § 69e UrhG).** Furthermore, You shall not circumvent, defeat, disable, remove, bypass, avoid, evade, or interfere with any Technical Protection Measures, digital rights management, license-validation routines, time-bomb checks, anti-tamper mechanisms, integrity checks, signature verification, or any other security or protection mechanisms present in the Software, whether in Source or Binary form.
+
+### 3.7. Prohibition on Use of Trade Names and Trademarks — Verbot der Nutzung von Handelsnamen und Marken
+
+**YOU ARE NOT GRANTED ANY RIGHT TO USE THE TRADE NAMES, TRADEMARKS, SERVICE MARKS, LOGOS, PRODUCT NAMES, OR BRANDING OF THE LICENSOR, EXCEPT SOLELY TO THE EXTENT NECESSARY TO COMPLY WITH THE ATTRIBUTION REQUIREMENTS OF THIS LICENSE.** You shall not imply, explicitly or implicitly, any endorsement, sponsorship, affiliation, partnership, association, connection, or relationship with the Licensor. You shall not register, use, or claim any domain name, social media handle, username, or online identifier that includes or is confusingly similar to the Licensor's trade names, trademarks, or service marks.
+
+### 3.8. Prohibition on Publishing Benchmarks or Performance Metrics — Verbot der Veröffentlichung von Benchmarks oder Leistungskennzahlen
+
+**YOU SHALL NOT PUBLISH, PUBLICIZE, DISCLOSE, ANNOUNCE, OR DISSEMINATE ANY BENCHMARK, STRESS-TEST RESULT, PERFORMANCE METRIC, COMPARATIVE ANALYSIS, OR COMPETITIVE EVALUATION OF THE SOFTWARE WITHOUT THE PRIOR WRITTEN CONSENT OF THE LICENSOR.** This prohibition includes but is not limited to:
+
+(a) Publishing any performance comparisons between the Software and other software products;
+
+(b) Disclosing any test results, speed measurements, throughput figures, latency measurements, resource utilization metrics, scalability assessments, or stability tests;
+
+(c) Publishing any analysis of the Software's reliability, robustness, security, or quality;
+
+(d) Disclosing any findings from stress testing, load testing, endurance testing, or fuzz testing;
+
+(e) Publishing any code profiling, memory analysis, or runtime behavior analysis results;
+
+(f) Disclosing any metrics regarding the Software's performance under various configurations, environments, or workloads; and
+
+(g) Any other publication or disclosure that could be used to evaluate, compare, or assess the Software's performance, capabilities, or quality.
+
+### 3.9. Prohibition on Distribution of Patches — Verbot der Verteilung von Patches
+
+**EVEN IF YOU DISCOVER A BUG, DEFECT, VULNERABILITY, ISSUE, OR PROBLEM IN THE SOFTWARE, YOU ARE EXPRESSLY PROHIBITED FROM CREATING, DEVELOPING, PRODUCING, OR DISTRIBUTING ANY PATCH, HOTFIX, WORKAROUND, SOLUTION, MITIGATION, FIX, OR CORRECTION TO THE PUBLIC OR TO ANY THIRD PARTY.** All fixes, corrections, and solutions must be communicated privately and confidentially to the Licensor for potential incorporation at the Licensor's sole and absolute discretion. You shall not claim, assert, or imply any rights, credit, or ownership over any patch or fix.
+
+### 3.10. Prohibition on Use in Illegal or Harmful Activities — Verbot der Nutzung für illegale oder schädliche Aktivitäten
+
+**YOU SHALL NOT USE THE SOFTWARE IN CONNECTION WITH ANY ILLEGAL, UNETHICAL, HARMFUL, MALICIOUS, OR DESTRUCTIVE ACTIVITY.** This prohibition includes, but is not limited to:
+
+(a) Violating any applicable law, regulation, ordinance, treaty, or legal requirement of any jurisdiction, including but not limited to the laws of the Federal Republic of Germany, the European Union, and any other applicable legal regime;
+
+(b) Infringing, violating, or misappropriating the intellectual property, privacy, publicity, personality, or other rights of the Licensor or any third party;
+
+(c) Exploiting the Software or any Vulnerabilities thereof to harm, damage, disrupt, compromise, or attack the Licensor, the Software, its users, or any third party;
+
+(d) Using the Software in any way that could destabilize, damage, disrupt, compromise, or degrade any computer system, network, service, infrastructure, or device;
+
+(e) Using the Software to develop, produce, or distribute any malware, virus, worm, trojan, ransomware, spyware, adware, rootkit, or any other malicious software;
+
+(f) Using the Software in connection with any unauthorized access, intrusion, penetration, or breach of any computer system, network, service, or device;
+
+(g) Using the Software to commit fraud, deception, identity theft, forgery, or any other financial or criminal offense;
+
+(h) Using the Software in any way that violates the rights, privacy, or dignity of any person;
+
+(i) Using the Software in any way that could cause harm to any person, including but not limited to physical, psychological, emotional, or financial harm;
+
+(j) Using the Software in any way that could cause damage to any property, whether tangible or intangible;
+
+(k) Using the Software in any way that could disrupt, interfere with, or compromise any critical infrastructure, including but not limited to healthcare, transportation, energy, water, finance, communications, or emergency services; and
+
+(l) Using the Software in any way that is contrary to public order, public safety, or public morality as defined under German law.
+
+### 3.11. Prohibition on Circumvention of License Terms — Verbot der Umgehung der Lizenzbedingungen
+
+**YOU SHALL NOT TAKE ANY ACTION THAT WOULD CIRCUMVENT, DEFEAT, BYPASS, AVOID, EVADE, OR OTHERWISE RENDER INEFFECTIVE ANY TERM, CONDITION, RESTRICTION, OR OBLIGATION OF THIS LICENSE.** This prohibition includes, but is not limited to:
+
+(a) Entering into any agreement or arrangement that would conflict with or override the terms of this License;
+
+(b) Operating through any intermediary, agent, affiliate, subsidiary, parent, or related entity to engage in any activity prohibited by this License;
+
+(c) Utilizing any technical or legal mechanism to avoid the restrictions of this License;
+
+(d) Claiming any rights, immunities, or defenses that would negate or limit the enforceability of this License;
+
+(e) Attempting to invalidate, void, or render unenforceable any provision of this License; and
+
+(f) Any other action that would undermine the effectiveness of this License.
+
+---
+
+## 4. EXCLUSIVE LIABILITY WAIVER AND NO-FAULT PROVISION — ALLEINIGE HAFTUNGSFREISTELLUNG UND SCHULDLOSIGKEITSKLAUSEL
+
+### 4.1. Complete and Absolute Waiver of Liability — Vollständiger und Absoluter Haftungsverzicht
+
+**THE LICENSOR SHALL NOT BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY CLAIMS, DAMAGES, LOSSES, LIABILITIES, COSTS, EXPENSES, OR INJURIES ARISING OUT OF OR RELATING TO THE SOFTWARE, YOUR USE THEREOF, OR YOUR INABILITY TO USE THE SOFTWARE, REGARDLESS OF THE THEORY OF LIABILITY (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE, GROSS NEGLIGENCE, OR WILLFUL MISCONDUCT), STRICT LIABILITY, PRODUCT LIABILITY, OR OTHERWISE), EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH CLAIMS, DAMAGES, OR LOSSES.** THE LICENSOR MAKES NO REPRESENTATIONS, WARRANTIES, OR GUARANTEES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, REGARDING THE SOFTWARE, INCLUDING BUT NOT LIMITED TO ITS FUNCTIONALITY, ACCURACY, RELIABILITY, SECURITY, QUALITY, PERFORMANCE, OR SUITABILITY FOR ANY PURPOSE.
+
+### 4.2. "AS IS" Basis — "Wie Besehen" Grundlage
+
+**THE SOFTWARE IS PROVIDED "AS IS" AND "WITH ALL FAULTS," WITHOUT ANY WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSOR EXPRESSLY DISCLAIMS ALL WARRANTIES AND CONDITIONS, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY (MARKTGÄNGIGKEIT), FITNESS FOR A PARTICULAR PURPOSE (EIGNUNG FÜR EINEN BESTIMMTEN ZWECK), TITLE (RECHTMÄSSIGER TITEL), NON-INFRINGEMENT (NICHTVERLETZUNG VON RECHTEN DRITTER), ACCURACY (RICHTIGKEIT), QUALITY (QUALITÄT), AND THE IMPLIED CONDITIONS OF SATISFACTORY QUALITY (BEFRIEDIGENDE QUALITÄT) AND WORKMANLIKE EFFORT (FACHGERECHTE AUSFÜHRUNG).** THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED, ERROR-FREE, OR VIRUS-FREE, OR THAT ANY DEFECTS WILL BE CORRECTED. THE LICENSOR DOES NOT WARRANT THAT THE SOFTWARE IS COMPATIBLE WITH ANY PARTICULAR HARDWARE, SOFTWARE, OR SYSTEM CONFIGURATION.
+
+### 4.3. Entire Risk Assumption — Übernahme des Gesamtrisikos
+
+**THE ENTIRE RISK AS TO THE QUALITY, PERFORMANCE, RELIABILITY, SECURITY, AND USEFULNESS OF THE SOFTWARE IS WITH YOU. YOU ARE SOLELY AND EXCLUSIVELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM, NETWORK, DEVICES, DATA, SOFTWARE, OR ANY OTHER PROPERTY OR ASSET THAT RESULTS FROM YOUR USE OF OR RELIANCE ON THE SOFTWARE.** You assume full responsibility for all costs associated with any necessary servicing, repair, or correction of any systems, devices, or data affected by your use of the Software.
+
+### 4.4. Limitation of Liability — Haftungsbeschränkung
+
+**IN NO EVENT SHALL THE LICENSOR, ITS AFFILIATES, OR ITS CONTRIBUTORS BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES ARISING OUT OF OR RELATING TO THIS LICENSE, THE SOFTWARE, OR YOUR USE OR INABILITY TO USE THE SOFTWARE, REGARDLESS OF THE THEORY OF LIABILITY (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE, GROSS NEGLIGENCE, OR WILLFUL MISCONDUCT), STRICT LIABILITY, OR OTHERWISE), EVEN IF THE LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION APPLIES TO ALL CLAIMS, INCLUDING BUT NOT LIMITED TO CLAIMS FOR LOSS OF PROFITS (ENTGANGENER GEWINN), LOSS OF REVENUE (UMSATZAUSFALL), LOSS OF GOODWILL (VERLUST AN GESCHÄFTSWERT), LOSS OF DATA (DATENVERLUST), BUSINESS INTERRUPTION (GESCHÄFTSUNTERBRECHUNG), REPLACEMENT COSTS (ERSATZBESCHAFFUNGSKOSTEN), OR ANY OTHER ECONOMIC OR NON-ECONOMIC LOSS, WHETHER TANGIBLE OR INTANGIBLE.**
+
+### 4.5. Total Liability Cap — Gesamthaftungsobergrenze
+
+**NOTWITHSTANDING ANYTHING TO THE CONTRARY IN THIS LICENSE, THE TOTAL AGGREGATE LIABILITY OF THE LICENSOR TO YOU OR ANY THIRD PARTY FOR ANY AND ALL CLAIMS ARISING UNDER THIS LICENSE SHALL NOT EXCEED THE GREATER OF (A) THE AMOUNT PAID BY YOU TO THE LICENSOR FOR THE SOFTWARE, IF ANY, AND (B) ONE U.S. DOLLAR ($1.00).** THIS LIMITATION SHALL APPLY REGARDLESS OF THE NATURE OR NUMBER OF CLAIMS AND REGARDLESS OF WHETHER THE CLAIMS ARE BASED ON CONTRACT, TORT, STATUTE, OR ANY OTHER LEGAL THEORY.
+
+### 4.6. Essential Purpose — Wesentlicher Zweck
+
+**YOU ACKNOWLEDGE AND AGREE THAT THE DISCLAIMERS OF WARRANTY AND LIMITATIONS OF LIABILITY SET FORTH HEREIN ARE AN ESSENTIAL PART OF THIS LICENSE AND ARE A MATERIAL INDUCEMENT FOR THE LICENSOR TO MAKE THE SOFTWARE AVAILABLE TO YOU.** Without these disclaimers and limitations, the Licensor would not have made the Software available under this License. You further acknowledge and agree that these disclaimers and limitations reflect a reasonable and fair allocation of risk between the parties, given that the Licensor is providing the Software free of charge and with no expectation of compensation.
+
+### 4.7. No Liability for Third-Party Claims — Keine Haftung für Ansprüche Dritter
+
+**THE LICENSOR SHALL HAVE NO LIABILITY WHATSOEVER FOR ANY CLAIMS, DEMANDS, ACTIONS, SUITS, OR PROCEEDINGS BROUGHT BY ANY THIRD PARTY AGAINST YOU ARISING OUT OF OR RELATING TO YOUR USE OF THE SOFTWARE.** You assume full and exclusive responsibility for defending and resolving any such claims, demands, actions, suits, or proceedings, and You shall indemnify and hold harmless the Licensor from all such claims as provided in Section 6.
+
+### 4.8. No Liability for Illegal or Malicious Use — Keine Haftung für illegale oder böswillige Nutzung
+
+**IF ANY PERSON OR ENTITY (INCLUDING YOURSELF) USES THE SOFTWARE FOR ANY ILLEGAL, UNETHICAL, HARMFUL, MALICIOUS, OR PROHIBITED ACTIVITY, THE LICENSOR SHALL HAVE NO LIABILITY WHATSOEVER FOR SUCH USE, AND SUCH USE SHALL BE SOLELY AND EXCLUSIVELY THE RESPONSIBILITY OF THE PERSON OR ENTITY ENGAGING IN SUCH ACTIVITY.** The Licensor expressly disclaims any and all liability for any consequences, damages, losses, or injuries resulting from any illegal or prohibited use of the Software. You expressly acknowledge and agree that:
+
+(a) The Licensor has no control over, and bears no responsibility for, how You use the Software;
+
+(b) The Licensor does not endorse, condone, or support any illegal or prohibited use of the Software;
+
+(c) The Licensor shall not be liable for any damages or losses resulting from any illegal or prohibited use of the Software;
+
+(d) Any illegal or prohibited use of the Software is a material breach of this License and shall result in immediate termination;
+
+(e) The Licensor reserves the right to cooperate fully with law enforcement and regulatory authorities in investigating and prosecuting any illegal or prohibited use of the Software; and
+
+(f) The Licensor reserves the right to take legal action against any person or entity engaging in illegal or prohibited use of the Software.
+
+### 4.9. No Liability for Modifications or Derivative Works — Keine Haftung für Modifikationen oder abgeleitete Werke
+
+**THE LICENSOR SHALL HAVE NO LIABILITY WHATSOEVER FOR ANY MODIFICATIONS OR DERIVATIVE WORKS CREATED BY ANY PERSON OR ENTITY, EVEN IF SUCH MODIFICATIONS OR DERIVATIVE WORKS ARE CREATED IN VIOLATION OF THIS LICENSE.** The Licensor does not endorse, support, assume responsibility for, or provide any warranty regarding any modified version of the Software or any derivative work. The Licensor shall not be liable for any claims, damages, losses, or injuries resulting from any modification or derivative work.
+
+### 4.10. Independent Duty to Verify — Selbständige Prüfungspflicht
+
+**YOU HAVE AN INDEPENDENT DUTY TO VERIFY THE SUITABILITY, FUNCTIONALITY, RELIABILITY, SECURITY, AND LEGAL COMPLIANCE OF THE SOFTWARE FOR YOUR SPECIFIC NEEDS AND INTENDED USE.** The Licensor makes no representation that the Software is appropriate or legal for any particular purpose or in any particular jurisdiction. You are solely responsible for ensuring that your use of the Software complies with all applicable laws, regulations, and legal requirements.
+
+---
+
+## 5. INTELLECTUAL PROPERTY RIGHTS — GEISTIGE EIGENTUMSRECHTE
+
+### 5.1. Ownership — Eigentum
+
+**THE LICENSOR RETAINS ALL RIGHT, TITLE, AND INTEREST IN AND TO THE SOFTWARE, INCLUDING ALL INTELLECTUAL PROPERTY RIGHTS THEREIN, WHETHER REGISTERED OR UNREGISTERED, INCLUDING COPYRIGHTS (URHEBERRECHTE), PATENT RIGHTS (PATENTRECHTE), TRADE SECRET RIGHTS (GESCHÄFTSGEHEIMNISSE), MORAL RIGHTS (URHEBERPERSÖNLICHKEITSRECHTE), SUI GENERIS DATABASE RIGHTS, AND ANY OTHER PROPRIETARY RIGHTS RECOGNIZED UNDER THE LAWS OF THE FEDERAL REPUBLIC OF GERMANY, THE EUROPEAN UNION, AND INTERNATIONAL TREATIES.** This License does not transfer, assign, or convey any ownership rights to You. You acknowledge and agree that the Licensor is the sole and exclusive owner of the Software and all associated intellectual property rights.
+
+### 5.2. No Implied Licenses — Keine stillschweigenden Lizenzen
+
+**NOTHING IN THIS LICENSE SHALL BE CONSTRUED AS GRANTING ANY RIGHTS TO YOU BY IMPLICATION, ESTOPPEL, OR OTHERWISE, EXCEPT AS EXPRESSLY STATED IN SECTION 2.** Any use of the Software not expressly permitted by this License is a violation of the Licensor's intellectual property rights and may subject You to civil and criminal penalties under German law (insbesondere gemäß §§ 97 ff. UrhG, §§ 106 ff. UrhG, und § 10 UWG) and applicable international law.
+
+### 5.3. Reservation of Patent Rights — Vorbehalt von Patentrechten
+
+**IF THE SOFTWARE IS OR BECOMES SUBJECT TO ANY PATENT CLAIMS OWNED OR CONTROLLED BY THE LICENSOR, THIS LICENSE DOES NOT GRANT YOU ANY RIGHT TO MAKE, HAVE MADE, USE, OFFER TO SELL, SELL, OR IMPORT ANY DEVICE OR PROCESS THAT INCORPORATES OR EMBODIES THE SOFTWARE. ALL PATENT RIGHTS ARE EXPRESSLY RESERVED BY THE LICENSOR.**
+
+### 5.4. Moral Rights — Urheberpersönlichkeitsrechte
+
+**TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU WAIVE ANY AND ALL CLAIMS BASED ON MORAL RIGHTS, INCLUDING BUT NOT LIMITED TO THE RIGHT OF INTEGRITY (RECHT AUF UNVERFÄLSCHTE WERKNUTZUNG) AND THE RIGHT OF ATTRIBUTION (RECHT AUF ANERKENNUNG DER URHEBERSCHAFT), IN ANY DERIVATIVE WORKS YOU CREATE (WHICH ARE PROHIBITED BY THIS LICENSE).** Conversely, the Licensor retains all moral rights in and to the original Software and may assert such rights at any time. You acknowledge and agree that the Licensor's moral rights are inalienable and cannot be transferred, waived, or assigned, except as expressly provided in this Section.
+
+---
+
+## 6. INDEMNIFICATION — FREISTELLUNGSPFLICHT
+
+**YOU AGREE TO DEFEND, INDEMNIFY, AND HOLD HARMLESS THE LICENSOR, ITS OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, SUCCESSORS, AND ASSIGNS FROM AND AGAINST ANY AND ALL CLAIMS, DEMANDS, ACTIONS, SUITS, PROCEEDINGS, DAMAGES, LIABILITIES, LOSSES, COSTS, AND EXPENSES (INCLUDING REASONABLE ATTORNEYS' FEES, LEGAL COSTS, AND EXPERT WITNESS FEES) ARISING OUT OF OR RELATING TO:**
+
+(a) **Your Use of the Software**: Any use of the Software by You or on Your behalf, whether authorized or unauthorized under this License;
+
+(b) **Breach of this License**: Any breach, violation, or non-compliance with any term, condition, restriction, or obligation of this License by You or on Your behalf;
+
+(c) **Unauthorized Modification or Distribution**: Any modification, adaptation, translation, or distribution of the Software by You or on Your behalf;
+
+(d) **Commercial Use**: Any Commercial Use of the Software by You or on Your behalf;
+
+(e) **Third-Party Claims**: Any claim, demand, or action by any third party alleging that Your use of the Software infringes, violates, or misappropriates any intellectual property, privacy, publicity, or other rights of such third party;
+
+(f) **Illegal or Prohibited Use**: Any illegal, unethical, harmful, malicious, or prohibited use of the Software by You or on Your behalf;
+
+(g) **Modifications or Derivative Works**: Any modifications or derivative works created by You or on Your behalf, regardless of whether such modifications or derivative works are authorized or prohibited under this License;
+
+(h) **Misrepresentation**: Any misrepresentation, false statement, or misleading conduct by You or on Your behalf regarding the Software, the Licensor, or this License;
+
+(i) **Intellectual Property Infringement**: Any claim that Your use of the Software infringes, violates, or misappropriates any intellectual property rights of any third party;
+
+(j) **Harm or Damage**: Any harm, damage, loss, or injury caused by You or on Your behalf through the use of the Software; and
+
+(k) **Legal Violations**: Any violation of any applicable law, regulation, ordinance, treaty, or legal requirement by You or on Your behalf.
+
+---
+
+## 7. TERMINATION — KÜNDIGUNG
+
+### 7.1. Automatic Termination — Automatische Kündigung
+
+**THIS LICENSE IS EFFECTIVE UNTIL TERMINATED. YOUR RIGHTS UNDER THIS LICENSE SHALL TERMINATE AUTOMATICALLY AND IMMEDIATELY WITHOUT NOTICE FROM THE LICENSOR IF YOU FAIL TO COMPLY WITH ANY TERM OR CONDITION OF THIS LICENSE.** The automatic termination of this License is effective immediately upon the occurrence of any breach, regardless of whether the Licensor has actual knowledge of such breach and regardless of whether the Licensor has provided any notice of default. You acknowledge and agree that the automatic termination provision is essential to the protection of the Licensor's intellectual property rights and that any breach of this License causes irreparable harm to the Licensor.
+
+### 7.2. Breach — Vertragsverletzung
+
+**UPON ANY BREACH OF THIS LICENSE, THE LICENSOR MAY, AT HER SOLE AND ABSOLUTE DISCRETION, TERMINATE THIS LICENSE AND DEMAND THAT YOU CEASE ALL USE OF THE SOFTWARE, DESTROY ALL COPIES OF THE SOFTWARE (INCLUDING SOURCE CODE AND BINARIES) IN YOUR POSSESSION OR CONTROL, AND CERTIFY IN WRITING TO THE LICENSOR THAT YOU HAVE DONE SO.** The Licensor may take any and all legal actions necessary to enforce her rights, including but not limited to seeking injunctive relief, specific performance, damages, and attorneys' fees.
+
+### 7.3. Survival — Fortbestand
+
+**THE PROVISIONS OF SECTIONS 1 (DEFINITIONS), 3 (STRICT PROHIBITIONS), 4 (EXCLUSIVE LIABILITY WAIVER), 5 (INTELLECTUAL PROPERTY RIGHTS), 6 (INDEMNIFICATION), 7 (TERMINATION), 8 (GOVERNING LAW AND VENUE), 9 (MISCELLANEOUS), AND 10 (ACKNOWLEDGMENT AND ACCEPTANCE) SHALL SURVIVE THE TERMINATION OF THIS LICENSE.** Termination of this License shall not limit any other rights or remedies available to the Licensor at law or in equity, and all obligations and liabilities of the parties that by their nature are intended to survive termination shall survive.
+
+---
+
+## 8. GOVERNING LAW AND VENUE — ANWENDBARES RECHT UND GERICHTSSTAND
+
+### 8.1. Governing Law — Anwendbares Recht
+
+**THIS LICENSE SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE LAWS OF THE FEDERAL REPUBLIC OF GERMANY, WITHOUT REGARD TO ITS CONFLICT OF LAWS PRINCIPLES.** The application of the United Nations Convention on Contracts for the International Sale of Goods (CISG) is expressly excluded. This License shall be interpreted in accordance with the principles of German contract law (Schuldrecht, insbesondere §§ 305 ff. BGB) and intellectual property law (Urheberrechtsgesetz, Patentgesetz, Markengesetz, und Gesetz zum Schutz von Geschäftsgeheimnissen).
+
+### 8.2. Exclusive Venue — Ausschließlicher Gerichtsstand
+
+**ANY LEGAL SUIT, ACTION, PROCEEDING, OR DISPUTE ARISING OUT OF OR RELATING TO THIS LICENSE OR THE SOFTWARE SHALL BE INSTITUTED EXCLUSIVELY IN THE STATE OR FEDERAL COURTS LOCATED IN THE FEDERAL REPUBLIC OF GERMANY, AT THE LICENSOR'S SOLE AND ABSOLUTE DISCRETION.** You irrevocably submit to the exclusive jurisdiction of such courts and waive any objection based on improper venue or forum non conveniens. The Licensor reserves the right to bring any legal action in any other jurisdiction that she deems appropriate for the enforcement of her rights.
+
+### 8.3. Waiver of Jury Trial — Verzicht auf Geschworenengerichtsverfahren
+
+**TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, YOU AND THE LICENSOR HEREBY IRREVOCABLY WAIVE ANY AND ALL RIGHT TO TRIAL BY JURY IN ANY LEGAL PROCEEDING ARISING OUT OF OR RELATING TO THIS LICENSE OR THE SOFTWARE.**
+
+### 8.4. Language — Sprache
+
+**THIS LICENSE IS DRAFTED IN ENGLISH. ANY TRANSLATION OF THIS LICENSE INTO ANY OTHER LANGUAGE IS FOR INFORMATIONAL PURPOSES ONLY AND SHALL NOT BE BINDING. IN THE EVENT OF ANY CONFLICT OR INCONSISTENCY BETWEEN THE ENGLISH VERSION AND ANY TRANSLATION, THE ENGLISH VERSION SHALL PREVAIL.**
+
+---
+
+## 9. MISCELLANEOUS — VERSCHIEDENES
+
+### 9.1. Entire Agreement — Vollständige Vereinbarung
+
+**THIS LICENSE CONSTITUTES THE ENTIRE AGREEMENT BETWEEN YOU AND THE LICENSOR WITH RESPECT TO THE SOFTWARE AND SUPERSEDES ALL PRIOR AND CONTEMPORANEOUS UNDERSTANDINGS, AGREEMENTS, REPRESENTATIONS, AND WARRANTIES, WHETHER WRITTEN OR ORAL, WITH RESPECT TO THE SOFTWARE.** No amendment, modification, or supplement to this License shall be effective unless in writing and signed by both parties. The Licensor reserves the right to update or modify this License at any time, with or without notice, and Your continued use of the Software after any such update or modification constitutes Your acceptance of the updated or modified License.
+
+### 9.2. Severability — Salvatorische Klausel
+
+**IF ANY PROVISION OF THIS LICENSE IS HELD TO BE ILLEGAL, INVALID, OR UNENFORCEABLE UNDER APPLICABLE LAW, THE REMAINING PROVISIONS SHALL REMAIN IN FULL FORCE AND EFFECT, AND THE ILLEGAL, INVALID, OR UNENFORCEABLE PROVISION SHALL BE REFORMED TO THE MINIMUM EXTENT NECESSARY TO MAKE IT VALID AND ENFORCEABLE WHILE PRESERVING THE ORIGINAL INTENT OF THE PARTIES TO THE GREATEST EXTENT POSSIBLE.** If any provision of this License is held to be illegal, invalid, or unenforceable due to its scope, duration, or extent, the Licensor shall have the right to reform such provision to the maximum extent permitted by law that most closely approximates the original intent of the parties.
+
+### 9.3. No Waiver — Kein Verzicht
+
+**NO WAIVER OF ANY TERM OF THIS LICENSE SHALL BE DEEMED A FURTHER OR CONTINUING WAIVER OF SUCH TERM OR ANY OTHER TERM, AND THE LICENSOR'S FAILURE TO ASSERT ANY RIGHT OR PROVISION UNDER THIS LICENSE SHALL NOT CONSTITUTE A WAIVER OF SUCH RIGHT OR PROVISION.** Any waiver of any term or condition of this License must be in writing and signed by the Licensor to be effective.
+
+### 9.4. Assignment — Abtretung
+
+**YOU MAY NOT ASSIGN, TRANSFER, SUBLICENSE, DELEGATE, OR OTHERWISE CONVEY THIS LICENSE OR ANY RIGHTS GRANTED HEREUNDER, WHETHER BY OPERATION OF LAW OR OTHERWISE, WITHOUT THE PRIOR WRITTEN CONSENT OF THE LICENSOR.** ANY ATTEMPTED ASSIGNMENT WITHOUT SUCH CONSENT SHALL BE NULL AND VOID. The Licensor may freely assign, transfer, or delegate this License or any rights or obligations hereunder without restriction and without notice to You.
+
+### 9.5. Relationship — Rechtsverhältnis
+
+**NOTHING IN THIS LICENSE SHALL BE DEEMED TO CREATE AN AGENCY, PARTNERSHIP, JOINT VENTURE, EMPLOYMENT, OR FIDUCIARY RELATIONSHIP BETWEEN YOU AND THE LICENSOR.** This License does not grant You any right to bind or represent the Licensor in any way. You and the Licensor are independent contractors, and no other relationship is intended or created by this License.
+
+### 9.6. Equitable Relief — Einstweiliger Rechtsschutz
+
+**YOU ACKNOWLEDGE THAT A BREACH OF THIS LICENSE BY YOU WOULD CAUSE IRREPARABLE HARM TO THE LICENSOR FOR WHICH MONETARY DAMAGES WOULD BE INADEQUATE.** ACCORDINGLY, THE LICENSOR SHALL BE ENTITLED TO SEEK AND OBTAIN PRELIMINARY INJUNCTIVE RELIEF, SPECIFIC PERFORMANCE, AND OTHER EQUITABLE REMEDIES TO ENFORCE THE TERMS OF THIS LICENSE, IN ADDITION TO ANY OTHER REMEDIES AVAILABLE AT LAW OR IN EQUITY, WITHOUT THE NEED TO POST A BOND OR OTHER SECURITY. You acknowledge and agree that the Licensor's right to equitable relief is essential to the protection of her intellectual property rights.
+
+### 9.7. Export Control — Exportkontrolle
+
+**YOU AGREE TO COMPLY WITH ALL APPLICABLE EXPORT CONTROL AND TRADE SANCTIONS LAWS AND REGULATIONS OF THE FEDERAL REPUBLIC OF GERMANY, THE EUROPEAN UNION, AND ANY OTHER APPLICABLE JURISDICTION.** YOU SHALL NOT EXPORT, RE-EXPORT, OR TRANSFER THE SOFTWARE TO ANY COUNTRY OR ENTITY THAT IS SUBJECT TO APPLICABLE TRADE RESTRICTIONS OR EMBARGOES.
+
+### 9.8. Publicity — Öffentlichkeitsarbeit
+
+**YOU SHALL NOT USE THE NAME, LOGO, TRADEMARKS, TRADE NAMES, OR BRANDING OF THE LICENSOR TO ENDORSE OR PROMOTE ANY PRODUCT, SERVICE, OR DERIVATIVE WORK WITHOUT THE PRIOR WRITTEN CONSENT OF THE LICENSOR.**
+
+### 9.9. Attorney Fees — Anwaltskosten
+
+**IN THE EVENT OF ANY LITIGATION OR OTHER PROCEEDING ARISING OUT OF OR RELATING TO THIS LICENSE, THE PREVAILING PARTY SHALL BE ENTITLED TO RECOVER ITS REASONABLE ATTORNEYS' FEES, LEGAL COSTS, AND EXPENSES INCURRED IN CONNECTION WITH SUCH PROCEEDING.**
+
+### 9.10. Force Majeure — Höhere Gewalt
+
+**THE LICENSOR SHALL NOT BE LIABLE FOR ANY FAILURE OR DELAY IN PERFORMING ITS OBLIGATIONS UNDER THIS LICENSE TO THE EXTENT SUCH FAILURE OR DELAY IS CAUSED BY FORCE MAJEURE, INCLUDING BUT NOT LIMITED TO ACTS OF GOD, WAR, TERRORISM, NATURAL DISASTERS, STRIKES, GOVERNMENTAL ACTIONS, OR ANY OTHER EVENT BEYOND THE REASONABLE CONTROL OF THE LICENSOR.**
+
+### 9.11. Notice — Mitteilungen
+
+**ANY NOTICE, COMMUNICATION, OR OTHER CORRESPONDENCE UNDER THIS LICENSE SHALL BE IN WRITING AND SHALL BE DEEMED TO HAVE BEEN DULY GIVEN IF DELIVERED PERSONALLY, SENT BY REGISTERED OR CERTIFIED MAIL (RETURN RECEIPT REQUESTED), OR SENT BY A NATIONALLY RECOGNIZED OVERNIGHT COURIER SERVICE TO THE ADDRESS DESIGNATED BY THE PARTIES FOR SUCH NOTICES.** Notices to the Licensor shall be sent to the address listed on the Licensor's official website or to such other address as the Licensor may designate in writing.
+
+### 9.12. Interpretation — Auslegung
+
+**THIS LICENSE SHALL BE INTERPRETED IN ACCORDANCE WITH ITS PLAIN MEANING AND SHALL NOT BE CONSTRUED AGAINST THE LICENSOR BY REASON OF HER HAVING DRAFTED THE LICENSE.** The headings and captions in this License are for convenience only and shall not affect the interpretation of the provisions.
+
+### 9.13. No Third-Party Beneficiaries — Keine Drittbegünstigten
+
+**THIS LICENSE IS FOR THE SOLE BENEFIT OF THE PARTIES AND THEIR PERMITTED SUCCESSORS AND ASSIGNS, AND NOTHING HEREIN, EXPRESS OR IMPLIED, IS INTENDED TO OR SHALL CONFER UPON ANY OTHER PERSON OR ENTITY ANY LEGAL OR EQUITABLE RIGHT, BENEFIT, OR REMEDY OF ANY NATURE WHATSOEVER.**
+
+---
+
+## 10. DESTRUCTION OBLIGATION UPON NON-ACCEPTANCE — VERNICHTUNGSPFLICHT BEI NICHTANNAHME
+
+### 10.1. Mandatory Destruction — Zwingende Vernichtung
+
+**IF YOU DO NOT AGREE TO BE BOUND BY EACH AND EVERY TERM OF THIS LICENSE, YOU MUST IMMEDIATELY CEASE VIEWING AND USING THE SOFTWARE, DESTROY ALL COPIES OF THE SOFTWARE (INCLUDING SOURCE CODE AND BINARIES) IN YOUR POSSESSION OR CONTROL, AND PERMANENTLY DELETE ANY DOWNLOADED SOURCE CODE OR BINARIES FROM ALL STORAGE DEVICES AND LOCATIONS.** This obligation applies regardless of whether You have viewed, compiled, or used the Software in any way.
+
+### 10.2. Certification — Bescheinigung
+
+**UPON THE LICENSOR'S REQUEST, YOU SHALL PROVIDE A WRITTEN CERTIFICATION, SIGNED BY AN AUTHORIZED REPRESENTATIVE OF YOURSELF OR YOUR ENTITY, CONFIRMING THAT YOU HAVE COMPLIED WITH THE DESTRUCTION OBLIGATIONS SET FORTH IN THIS SECTION.**
+
+### 10.3. Remedies for Non-Compliance — Rechtsbehelfe bei Nichteinhaltung
+
+**ANY FAILURE TO COMPLY WITH THE DESTRUCTION OBLIGATIONS SET FORTH IN THIS SECTION SHALL CONSTITUTE A MATERIAL BREACH OF THIS LICENSE AND MAY RESULT IN CIVIL LIABILITY, CRIMINAL PROSECUTION, AND CLAIMS FOR DAMAGES UNDER GERMAN LAW.**
+
+---
+
+## 11. ACKNOWLEDGMENT AND ACCEPTANCE — ANERKENNUNG UND ANNAHME
+
+### 11.1. Acknowledgment — Anerkennung
+
+**BY VIEWING, COMPILING, ACCESSING, DOWNLOADING, INSTALLING, RUNNING, OR OTHERWISE USING THE SOFTWARE IN ANY CAPACITY, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS LICENSE IN ITS ENTIRETY, UNDERSTAND ALL OF ITS TERMS AND CONDITIONS, AND AGREE TO BE LEGALLY BOUND BY THEM.** You represent and warrant that You have the full power, capacity, and authority to enter into this License on behalf of Yourself or the entity You represent.
+
+### 11.2. Affirmation — Bestätigung
+
+**YOU AFFIRM AND CONFIRM THAT:**
+
+(a) You have had the opportunity to consult with legal counsel regarding the terms and conditions of this License;
+
+(b) You understand that this License imposes severe restrictions on Your use of the Software;
+
+(c) You understand that any breach of this License may result in substantial liability and damages;
+
+(d) You are entering into this License voluntarily and of Your own free will;
+
+(e) You have not been coerced, induced, or persuaded to enter into this License by any false or misleading representations; and
+
+(f) You acknowledge and agree that the Licensor's intellectual property rights are valuable and deserve the highest level of legal protection.
+
+### 11.3. Acceptance — Annahme
+
+**IF YOU DO NOT AGREE TO BE BOUND BY EACH AND EVERY TERM OF THIS LICENSE, YOU MUST IMMEDIATELY CEASE VIEWING AND USING THE SOFTWARE, DESTROY ALL COPIES OF THE SOFTWARE (INCLUDING SOURCE CODE AND BINARIES) IN YOUR POSSESSION OR CONTROL, AND PERMANENTLY DELETE ANY DOWNLOADED SOURCE CODE OR BINARIES FROM ALL STORAGE DEVICES AND LOCATIONS, AS SET FORTH IN SECTION 10.**
+
+---
+
+## 12. FINAL PROVISIONS — SCHLUSSBESTIMMUNGEN
+
+### 12.1. German Legal Superiority — Vorrang des deutschen Rechts
+
+**THIS LICENSE IS SUBJECT TO THE MANDATORY PROVISIONS OF GERMAN LAW. IN THE EVENT OF ANY CONFLICT OR INCONSISTENCY BETWEEN THIS LICENSE AND ANY MANDATORY PROVISIONS OF GERMAN LAW, THE MANDATORY PROVISIONS OF GERMAN LAW SHALL PREVAIL TO THE EXTENT OF SUCH CONFLICT OR INCONSISTENCY.**
+
+### 12.2. Statutory Limitations — Gesetzliche Beschränkungen
+
+**NOTHING IN THIS LICENSE SHALL BE CONSTRUED TO WAIVE, LIMIT, OR RESTRICT ANY RIGHTS THAT YOU MAY HAVE UNDER MANDATORY PROVISIONS OF APPLICABLE LAW THAT CANNOT BE WAIVED, LIMITED, OR RESTRICTED BY CONTRACT.**
+
+### 12.3. No Guarantee of Availability — Keine Verfügbarkeitsgarantie
+
+**THE LICENSOR MAKES NO GUARANTEE, REPRESENTATION, OR WARRANTY REGARDING THE CONTINUED AVAILABILITY OF THE SOFTWARE.** The Licensor reserves the right to discontinue, suspend, or modify the availability of the Software at any time, with or without notice, and for any reason or no reason, without liability to You or any third party.
+
+---
+
+**END OF LICENSE**
+
+---
+
+**This License is effective as of July 31, 2026.**
+
+**Copyright © 2026 Lina Simon. All Rights Reserved.**
+**Urheberrecht © 2026 Lina Simon. Alle Rechte vorbehalten.**
+
+---
+
+**WARNING: VIOLATION OF THIS LICENSE MAY RESULT IN CIVIL AND CRIMINAL PENALTIES UNDER GERMAN LAW. THE LICENSOR ACTIVELY ENFORCES HER INTELLECTUAL PROPERTY RIGHTS AND WILL TAKE LEGAL ACTION AGAINST ANY INFRINGERS.**
+
+**WARNUNG: DIE VERLETZUNG DIESER LIZENZ KANN ZU ZIVIL- UND STRAFRECHTLICHEN SANKTIONEN NACH DEUTSCHEM RECHT FÜHREN. DIE RECHTSINHABERIN VERFOLGT AKTIV IHRE GEISTIGEN EIGENTUMSRECHTE UND WIRD RECHTLICHE SCHRITTE GEGEN JEDEN EINGRIFF UNTERNEHMEN.**
