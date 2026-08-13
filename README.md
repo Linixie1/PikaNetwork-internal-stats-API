@@ -4,16 +4,21 @@ Cutie is an internal stats modification for Minecraft 1.8.9. Instead of drawing 
 
 ![Loader Menu](loader_preview.png)
 
+> **Is this a cheat / bannable?**  
+> Cutie is not a cheat. It is purely a stats viewer and offers zero gameplay advantages. Normal stats overlays have never been bannable on Pika. To prove it is safe, the project is published under a strict Source-Available Restricted License purely for transparency and security auditing. The license explicitly forbids any malicious or harmful use.  
+> 
+> That being said, Cutie works by injecting directly into Minecraft's memory so it can render stats right inside the native tablist. Because it injects like a traditional client modification, people might get banned if they are screenshared by staff. Besides screenshares though, you generally should not have any issues. Just keep the injection risk in mind and use it at your own discretion.
 ## Supported Clients (1.8.9)
 Cutie is built for **Minecraft 1.8.9** and natively supports:  
 
 - <img src="https://www.google.com/s2/favicons?domain=minecraft.net&sz=16" width="16" height="16"/> **Vanilla**
 - <img src="https://www.google.com/s2/favicons?domain=minecraftforge.net&sz=16" width="16" height="16"/> **Forge**
-- <img src="https://www.google.com/s2/favicons?domain=lunarclient.com&sz=16" width="16" height="16"/> **Lunar Client** (OptiFine & Forge profiles)
-- <img src="https://www.google.com/s2/favicons?domain=badlion.net&sz=16" width="16" height="16"/> **Badlion Client**
+- <img src="https://www.google.com/s2/favicons?domain=lunarclient.com&sz=16" width="16" height="16"/> **Lunar Client** (OptiFine & Forge)
+- <img src="https://www.google.com/s2/favicons?domain=badlion.net&sz=16" width="16" height="16"/> **Badlion Client** (Badlion and Optifine)
 - <img src="https://www.google.com/s2/favicons?domain=labymod.net&sz=16" width="16" height="16"/> **LabyMod** (Vanilla & Forge)
+- <img src="https://www.google.com/s2/favicons?domain=cm-pack.pl&sz=16" width="16" height="16"/> **CM Client**
 
-*Note: Other 1.8.9 clients may work, but the ones listed above are fully tested.*
+*Note: Other 1.8.9 clients may work, but the ones listed above are fully tested. Also, Silent Client is explicitly NOT supported.*
 
 ---
 
@@ -23,29 +28,29 @@ You can load Cutie using the standalone loader executable or inject the DLL manu
 
 ### Option 1: Standalone Loader (Recommended)
 1. Download `cutie-loader.exe` from the latest release.
-2. Launch your Minecraft client and join a world or server.
-3. Open `cutie-loader.exe`. It will automatically unpack the internal DLL and inject it.
+2. Open `cutie-loader.exe` and launch your Minecraft client. (Doesn't matter which order you open them in; the loader will just sit in the background until MC is running).
+3. The loader will automatically unpack the internal DLL and inject it.
+
+*Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. The injection takes about 30 seconds to stabilize, so just give it a moment.*
 
 ### Option 2: Manual DLL Injection
 1. Download `cutie.dll` from the release assets.
-2. Inject `cutie.dll` into your game process using any standard 64-bit injector (e.g. Process Hacker).
+2. Inject `cutie.dll` into your game process using any standard 64-bit injector (e.g., Process Hacker).
 
 ---
 
-##  Antivirus False Positives
+## Antivirus False Positives
 
-Because the loader reads game memory and injects code into Minecraft (which is required for the allocation to work), **Windows Defender or other antivirus software may falsely flag `cutie-loader.exe` as malware and delete it.** The standalone `cutie.dll` is much less likely to trigger this, but if you are using the loader, you may need to whitelist it.
+Because the loader reads game memory and injects code into Minecraft, **Windows Defender or other antivirus software might falsely flag `cutie-loader.exe` and delete it.** The standalone `cutie.dll` usually doesn't trigger this, but if you're using the loader, you'll need to whitelist it.
+
+*Note: Fully turning off your antivirus is NOT recommended and completely unnecessary. Only exclude the specific folder you put the loader in.*
 
 **Quick Fix for Windows Defender:**
-1. Create a dedicated folder for the loader (for example: `C:\Cutie`).
+1. Create a new folder on your Desktop named `Cutie`.
 2. Open Windows PowerShell as **Administrator**.
-3. Copy, paste, and run the following command to automatically exclude that folder from Defender scans:
+3. Copy, paste, and run this command to automatically exclude that folder from Defender:
    ```powershell
-   Add-MpPreference -ExclusionPath "C:\Cutie"
-4. Download and place `cutie-loader.exe` into that newly excluded folder and run it.
-
----
-
+   Add-MpPreference -ExclusionPath "$env:USERPROFILE\Desktop\Cutie"
 ## Logs & Troubleshooting
 
 If you run into injection issues, crashes, or rendering bugs:
@@ -57,8 +62,8 @@ If you run into injection issues, crashes, or rendering bugs:
 ## Tablist Status Indicators
 
 When viewing stats in-game or via the tab list:
-- **NICK**: Player is using a nickname or disguise.
-- **OFF**: Stats module is toggled off for that player or category.
+- **NICK**: Player is using a nickname.
+- **OFF**: Player has hidden their stats on the API.
 - **N/A**: Player stats are unavailable (e.g., brand-new account with 0 stats).
 
 ---
