@@ -1,13 +1,14 @@
-# Cutie - PikaNetwork Internal Stats API
+# Cutie - PikaNetwork Internal Stats API & Tablist Overlay
 
-Cutie is an internal stats modification for Minecraft 1.8.9. Instead of drawing external screen overlays on top of your game, Cutie renders statistics directly inside the native Minecraft tab list.
+If you are looking for **overlays for Pika Network**, Cutie is an internal stats modification for Minecraft 1.8.9 that provides a far superior alternative. Instead of drawing clunky external screen overlays on top of your game window, Cutie acts as a native Pika Network overlay by rendering real-time statistics directly inside the Minecraft tab list.
 
 ![Loader Menu](loader_preview.png)
 
 > **Is this a cheat / bannable?**  
-> Cutie is not a cheat. It is purely a stats viewer and offers zero gameplay advantages. Normal stats overlays have never been bannable on Pika. To prove it is safe, the project is published under a strict Source-Available Restricted License purely for transparency and security auditing. The license explicitly forbids any malicious or harmful use.  
+> Cutie is not a cheat. It acts purely as a stats viewer and offers zero gameplay advantages. Traditional Pika Network stats overlays have never been bannable. To prove it is safe, the project is published under a strict Source-Available Restricted License purely for transparency and security auditing. The license explicitly forbids any malicious or harmful use.  
 > 
-> That being said, Cutie works by injecting directly into Minecraft's memory so it can render stats right inside the native tablist. Because it injects like a traditional client modification, people might get banned if they are screenshared by staff. Besides screenshares though, you generally should not have any issues. Just keep the injection risk in mind and use it at your own discretion.
+> That being said, Cutie works by injecting directly into Minecraft's memory so it can render the stats overlay right inside the native tablist. Because it injects like a traditional client modification, people might get banned if they are screenshared by staff. Besides screenshares though, you generally should not have any issues. Just keep the injection risk in mind and use it at your own discretion.
+
 ## Supported Clients (1.8.9)
 Cutie is built for **Minecraft 1.8.9** and natively supports:  
 
@@ -29,7 +30,7 @@ You can load Cutie using the standalone loader executable or inject the DLL manu
 ### Option 1: Standalone Loader (Recommended)
 1. Download `cutie-loader.exe` from the latest release.
 2. Open `cutie-loader.exe` and launch your Minecraft client. (Doesn't matter which order you open them in; the loader will just sit in the background until MC is running).
-3. The loader will automatically unpack the internal DLL and inject it.
+3. The loader will automatically unpack the internal DLL and inject your in-game overlay.
 
 *Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. The injection takes about 30 seconds to stabilize, so just give it a moment.*
 
@@ -51,9 +52,11 @@ Because the loader reads game memory and injects code into Minecraft, **Windows 
 3. Copy, paste, and run this command to automatically exclude that folder from Defender:
    ```powershell
    Add-MpPreference -ExclusionPath "$env:USERPROFILE\Desktop\Cutie"
+      ```
+
 ## Logs & Troubleshooting
 
-If you run into injection issues, crashes, or rendering bugs:
+If you run into injection issues, crashes, or rendering bugs with the stats overlay:
 - **Loader Logs**: Saved in the folder where `cutie-loader.exe` was executed.
 - **DLL Logs**: Saved at `%userprofile%\.cutie\log.txt`.
 
@@ -61,7 +64,7 @@ If you run into injection issues, crashes, or rendering bugs:
 
 ## Tablist Status Indicators
 
-When viewing stats in-game or via the tab list:
+When viewing stats in-game or via the tab list overlay:
 - **NICK**: Player is using a nickname.
 - **OFF**: Player has hidden their stats on the API.
 - **N/A**: Player stats are unavailable (e.g., brand-new account with 0 stats).
@@ -69,6 +72,8 @@ When viewing stats in-game or via the tab list:
 ---
 
 ## Previews
+
+Unlike traditional external overlays, configuring your stats display is done entirely in-game.
 
 | In-Game ClickGUI | Display Settings |
 | :---: | :---: |
