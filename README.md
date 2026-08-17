@@ -31,7 +31,8 @@ You can load Cutie using the standalone loader executable or inject the DLL manu
 1. Download `cutie-loader.exe` from the latest release.
 2. Open `cutie-loader.exe` and launch your Minecraft client. (Doesn't matter which order you open them in; the loader will just sit in the background until MC is running).
 3. The loader will automatically unpack the internal DLL and inject your in-game overlay.
-
+4. Open the ClickGUI using right shift (the keybind can be changed in settings).
+   
 *Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. If your Minecraft client starts slow, the injection might fail, in such cases open the loader after the game is fully loaded (in main menu).*
 
 ### Option 2: Manual DLL Injection
