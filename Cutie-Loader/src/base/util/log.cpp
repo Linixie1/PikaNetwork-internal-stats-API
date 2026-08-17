@@ -29,7 +29,7 @@ Logger::Logger()
     m_file.open(logPath, std::ios::out | std::ios::trunc);
     if (m_file.is_open())
     {
-        m_file << "=== cutie loader log ===\n";
+        m_file << "cutie loader log \n";
         m_file.flush();
     }
 }
@@ -62,6 +62,6 @@ void Logger::Write(const std::string& message)
         m_file.flush();
     }
 
-    // Also write to debug output for DebugView/etc.
+    // writes every debug log to dbgview
     OutputDebugStringA(("[cutie] " + message + "\n").c_str());
 }

@@ -16,11 +16,18 @@
 #include "../../../resource.h"
 
 static bool IsMinecraftWindow(HWND hwnd, DWORD pid) {
-    wchar_t title[512] = {};
+     char className[256] = {};
+    GetClassNameA(hwnd, className, sizeof(className));
+    std::string cls(className);
+    if (cls.find("GLFW") == std::string::npos && 
+        cls.find("LWJGL") == std::string::npos && 
+        cls.find("SunAwtFrame") == std::string::npos) {
+        return false;
+    }
+
+   wchar_t title[512] = {};
     GetWindowTextW(hwnd, title, 512);
     std::wstring titleStr(title);
-
-    // launchers to exclude from injecting as they have jvm.dll and opengl32.dll, while not being the target
     if (titleStr.find(L"TLauncher") != std::wstring::npos) return false;
     if (titleStr.find(L"tlauncher") != std::wstring::npos) return false;
     if (titleStr.find(L"Electric") != std::wstring::npos) return false;
@@ -28,7 +35,6 @@ static bool IsMinecraftWindow(HWND hwnd, DWORD pid) {
 
     auto hSnap = CreateToolhelp32Snapshot(TH32CS_SNAPMODULE, pid);
     if (hSnap == INVALID_HANDLE_VALUE) return false;
-
     MODULEENTRY32W me = { sizeof(me) };
     bool hasJVM = false, hasLWJGL = false;
     if (Module32FirstW(hSnap, &me)) {
@@ -38,7 +44,6 @@ static bool IsMinecraftWindow(HWND hwnd, DWORD pid) {
         } while (Module32NextW(hSnap, &me));
     }
     CloseHandle(hSnap);
-
     return hasJVM && hasLWJGL;
 }
 
@@ -304,7 +309,7 @@ bool ProcessManager::EjectStaleDLL(DWORD processId, std::string& outError)
 }
 
 
-// NtCreateThreadEx prototype (*3x CFG on Windows 11)
+// NtCreateThreadEx prototype (3x CFG on Windows 11)
 
 typedef NTSTATUS(NTAPI* pNtCreateThreadEx)(
     OUT PHANDLE ThreadHandle,
@@ -410,12 +415,10 @@ bool ProcessManager::InjectDLL(DWORD processId, const char* dllPath, std::string
                    " - Windows Smart App Control preventing DLL loads\n"
                    " - The DLL is corrupted or has missing dependencies (unlikely)";
         return false;
-    } else if (exitCode >= 0xC0000000) {
-        char hexCode[32];
-        sprintf_s(hexCode, "0x%08X", exitCode);
-        outError = std::string("Injection blocked by Windows Security (CFG/Defender). Thread crashed: ") + hexCode;
-        return false;
     }
+
+    // HMODULE addresses can be high numbers (e.g. 0xD7D90000 due to ASLR), which would
+    // falsely trigger a >= 0xC000000 check. Any non-zero, non-STILL_ACTIVE exit code is a valid handle.
 
     // LoadLibraryA returned a valid module handle, meaning the PE image is loaded correctly
     return true;
