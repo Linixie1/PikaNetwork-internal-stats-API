@@ -1,4 +1,3 @@
-// unused code - LoadLibraryA is more reliable, not called in <ClCompile>, not referenced in Cutie-Loader.vcxproj.filters
 #include "manualMap.h"
 
 #include <windows.h>
@@ -106,11 +105,15 @@ uint64_t GetRemoteGetProcAddress(HANDLE hProcess, std::string& outError) {
     return reinterpret_cast<uint64_t>(addr);
 }
 
+// -------------------------------------------------------------------
 // x64 shellcode that calls DllMain(DLL_PROCESS_ATTACH, NULL)
+//
 // uses position-independent code with embedded addresses patched at runtime
+//
 // The shellcode:
 //   1. Calls DllMain(hinstDLL, DLL_PROCESS_ATTACH, NULL)
 //   2. Returns DllMain's return value for further usage
+// -------------------------------------------------------------------
 #pragma pack(push, 1)
 struct Shellcode64 {
     // sub rsp, 0x28 (shadow space + alignment)
@@ -559,6 +562,6 @@ bool ProcessManager::ManualMapDLL(DWORD processId, const char* dllPath, std::str
         return false;
     }
 
-    // the manual mapping worked (report success)
+    // the manual mapping worked (rare)
     return true;
 }

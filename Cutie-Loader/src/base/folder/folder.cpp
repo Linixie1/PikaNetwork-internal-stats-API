@@ -51,7 +51,7 @@ std::string FolderManager::GetVersionStringDll()
 	if (std::filesystem::exists(dllPath))
 	{
 		// returns hard-coded version tag
-		return "0.16";
+		return "127.0.0";
 	}
 	return "";
 }
@@ -67,11 +67,8 @@ std::string FolderManager::GetCutieFolder()
     return "C:\\.cutie";
 }
 
-std::string FolderManager::GetCurrentDir()
-{
-    wchar_t buffer[MAX_PATH];
-    GetCurrentDirectory(MAX_PATH, buffer);
-    std::wstring ws(buffer);
-	std::string currentDirectory(ws.begin(), ws.end());
-	return currentDirectory;
+std::string FolderManager::GetCurrentDir() {
+    char buffer[MAX_PATH];
+    GetCurrentDirectoryA(MAX_PATH, buffer);
+    return std::string(buffer);
 }
