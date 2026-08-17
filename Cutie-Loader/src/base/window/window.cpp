@@ -1,28 +1,24 @@
-#include "Window.h"
+#include "window.h"
 #include "ImGui/imgui.h"
 #include "ImGui/imgui_impl_dx9.h"
 #include "ImGui/imgui_impl_win32.h"
 #include <tchar.h>
-
+#include <thread>
+#include <chrono>
 #include "../resource.h"
 
 #define WINDOW_WIDTH 700
 #define WINDOW_HEIGHT 400
 
 void Window::Init() {
-    
     WNDCLASSEXW wc = { sizeof(wc), CS_CLASSDC, Window::WndProc, 0L, 0L, GetModuleHandle(nullptr), LoadIconW(GetModuleHandle(nullptr), MAKEINTRESOURCE(IDI_ICON1)), LoadCursor(nullptr, IDC_ARROW), nullptr, nullptr, L"Cutie Loader", LoadIconW(GetModuleHandle(nullptr), MAKEINTRESOURCE(IDI_ICON1)) };
-
-	int screenWidth = GetSystemMetrics(SM_CXSCREEN);
-	int screenHeight = GetSystemMetrics(SM_CYSCREEN);
-
+    int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+    int screenHeight = GetSystemMetrics(SM_CYSCREEN);
     ::RegisterClassExW(&wc);
     hwnd = ::CreateWindowW(wc.lpszClassName, L"Cutie Loader", WS_OVERLAPPEDWINDOW & ~WS_SIZEBOX, (screenWidth / 2) - (WINDOW_WIDTH / 2), (screenHeight / 2) - (WINDOW_HEIGHT / 2), WINDOW_WIDTH, WINDOW_HEIGHT, nullptr, nullptr, wc.hInstance, nullptr);
-
     LONG style = GetWindowLong(hwnd, GWL_STYLE);
-    style &= ~WS_SIZEBOX;  
-    style &= ~WS_MAXIMIZEBOX;  
-    
+    style &= ~WS_SIZEBOX;       
+    style &= ~WS_MAXIMIZEBOX;   
     SetWindowLong(hwnd, GWL_STYLE, style);
 
     if (!CreateDeviceD3D(hwnd)) {
@@ -37,19 +33,19 @@ void Window::Init() {
     IMGUI_CHECKVERSION();
     ImGui::CreateContext();
     ImGuiIO& io = ImGui::GetIO(); (void)io;
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     
-    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad;      
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
+    io.ConfigFlags |= ImGuiConfigFlags_NavEnableGamepad; 
     io.IniFilename = nullptr;
     
     ImFont* font = io.Fonts->AddFontFromFileTTF("C:\\Windows\\Fonts\\segoeui.ttf", 20);
-	io.FontDefault = font;
+    io.FontDefault = font;
 
     ImGui::StyleColorsDark();
 
     ImGui_ImplWin32_Init(hwnd);
     ImGui_ImplDX9_Init(g_pd3dDevice);
 
-	screen.SetupStyle();
+    screen.SetupStyle();
 }
 
 bool Window::Update() {
@@ -72,19 +68,20 @@ bool Window::Update() {
         g_DeviceLost = false;
     }
 
+    if (IsIconic(hwnd)) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(50));
+        return true;
+    }
+
     {
-        
         RECT rect;
         GetClientRect(hwnd, &rect);
         UINT width = rect.right - rect.left;
         UINT height = rect.bottom - rect.top;
-
         if (width > 0 && height > 0)
         {
-            
             g_d3dpp.BackBufferWidth = width;
             g_d3dpp.BackBufferHeight = height;
-
             ResetDevice();
         }
     }
@@ -92,20 +89,21 @@ bool Window::Update() {
     ImGui_ImplDX9_NewFrame();
     ImGui_ImplWin32_NewFrame();
     ImGui::NewFrame();
-
     Render();
-
     ImGui::EndFrame();
+
     g_pd3dDevice->SetRenderState(D3DRS_ZENABLE, FALSE);
     g_pd3dDevice->SetRenderState(D3DRS_ALPHABLENDENABLE, FALSE);
     g_pd3dDevice->SetRenderState(D3DRS_SCISSORTESTENABLE, FALSE);
     D3DCOLOR clear_col_dx = D3DCOLOR_RGBA(0,0,0, 255);
     g_pd3dDevice->Clear(0, nullptr, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, clear_col_dx, 1.0f, 0);
+
     if (g_pd3dDevice->BeginScene() >= 0) {
         ImGui::Render();
         ImGui_ImplDX9_RenderDrawData(ImGui::GetDrawData());
         g_pd3dDevice->EndScene();
     }
+
     HRESULT result = g_pd3dDevice->Present(nullptr, nullptr, nullptr, nullptr);
     if (result == D3DERR_DEVICELOST)
         g_DeviceLost = true;
@@ -113,8 +111,7 @@ bool Window::Update() {
     return true;
 }
 
-void Window::Cleanup()
-{
+void Window::Cleanup() {
     ImGui_ImplDX9_Shutdown();
     ImGui_ImplWin32_Shutdown();
     ImGui::DestroyContext();
@@ -123,10 +120,8 @@ void Window::Cleanup()
     ::DestroyWindow(hwnd);
 }
 
-void Window::Render()
-{
-    
-	screen.Render();
+void Window::Render() {
+    screen.Render();
 }
 
 bool Window::CreateDeviceD3D(HWND hWnd) {
@@ -143,7 +138,6 @@ bool Window::CreateDeviceD3D(HWND hWnd) {
 
     HRESULT hr = g_pD3D->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, hWnd, D3DCREATE_HARDWARE_VERTEXPROCESSING, &g_d3dpp, &g_pd3dDevice);
     if (FAILED(hr)) {
-        
         hr = g_pD3D->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, hWnd, D3DCREATE_SOFTWARE_VERTEXPROCESSING, &g_d3dpp, &g_pd3dDevice);
         if (FAILED(hr)) {
             MessageBoxA(nullptr, "Failed to initialize DirectX 9.\nPlease ensure your graphics drivers are installed and DirectX 9 is available.", "Cutie Loader - Error", MB_OK | MB_ICONERROR);
@@ -168,6 +162,7 @@ void Window::ResetDevice() {
 }
 
 extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
+
 LRESULT WINAPI Window::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     if (ImGui_ImplWin32_WndProcHandler(hWnd, msg, wParam, lParam))
         return true;

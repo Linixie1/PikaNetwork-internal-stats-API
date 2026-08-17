@@ -3,7 +3,7 @@
 #include "window/window.h"
 #include <string>
 
-#define INJECTOR_VERSION "0.0.3"
+#define INJECTOR_VERSION "8080"
 
 class Base
 {

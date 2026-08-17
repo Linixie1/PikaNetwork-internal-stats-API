@@ -5,10 +5,15 @@
 #include <map>
 #include <string>
 #include <queue>
+#include <deque>
+#include <vector>
 #include <mutex>
 #include <thread>
 #include <atomic>
 #include <chrono>
+#include <condition_variable>
+#include <windows.h>
+#include <winhttp.h>
 
 struct TabListStatsData {
     int level = 0;
@@ -31,16 +36,28 @@ struct TabListStatsData {
     int voidKills = 0;
     int meleeKills = 0;
     std::string clanTag = "";
-    bool isNicked = false;
-    bool isStatsOff = false;
+
     bool isValid = false;
     bool hasValidStats = false;
-    bool fetchCompleted = false;
+    bool leaderboardFetched = false;
+    bool profileFetched = false;
+    bool profileExists = false;
     std::chrono::system_clock::time_point fetchTime;
 };
 
-class TabList : public ModuleBase
-{
+// used for splitting endpoints across the proxy pool
+enum class FetchTaskType {
+    LEADERBOARD,
+    PROFILE
+};
+
+struct FetchTask {
+    std::string name;
+    FetchTaskType type;
+    std::chrono::steady_clock::time_point executeAfter;
+};
+
+class TabList : public ModuleBase {
 public:
     TabList();
     ~TabList();
@@ -62,22 +79,44 @@ public:
     static std::mutex cacheMutex;
     static void ClearCache();
 
-private:
     static std::queue<std::string> fetchQueue;
     static std::mutex queueMutex;
-    static std::atomic<bool> threadRunning;
-    static std::thread workerThread;
+    static std::string BuildStatSuffix(const TabListStatsData& stats);
 
-    static std::atomic<int> tickCounter;
+    static void EnqueuePlayer(const std::string& name);
+    static void ClearTaskQueues();
+
+private:
+    static std::atomic<bool> threadRunning;
+    static std::vector<std::thread> workerThreads; // threading pool
+
+    static std::deque<FetchTask> highPriorityQueue;
+    static std::deque<FetchTask> lowPriorityQueue;
+    static std::mutex taskQueueMutex;
+    static std::condition_variable taskCv;
+
+    static HINTERNET hHttpSession;
+    static HINTERNET hHttpConnect;
+    static std::mutex httpInitMutex;
+
+    static void InitHttpPool();
+    static void CloseHttpPool();
+    static std::string WinHttpGetPath(const std::string& path, int& statusCode);
+
+    static void PushTask(const std::string& name, FetchTaskType type, int delayMs = 0);
+    static bool PopTask(FetchTask& task);
+
     static void WorkerThreadFunc();
     static void FetchPlayerStats(const std::string& playerName);
     static void FetchLeaderboardStats(const std::string& playerName);
     static void FetchProfileStats(const std::string& playerName);
+    static void ExecuteLeaderboardTask(const std::string& playerName);
+    static void ExecuteProfileTask(const std::string& playerName);
+
     static void InjectAllTabStats();
     static void InjectTabWatermarkFooter();
     static void ClearTabWatermarkFooter();
     static std::string WinHttpGet(const std::string& url, int& statusCode);
-    static std::string BuildStatSuffix(const TabListStatsData& stats);
     static void ClearAllDisplayNames();
     static bool ShouldShowStats(jobject mc);
 };

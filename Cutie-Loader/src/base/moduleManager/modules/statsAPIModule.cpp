@@ -4,10 +4,6 @@
 #include "sdk/strayCache.h"
 #include "menu/menu.h"
 #include "json/json.hpp"
-#include "../../../denick/denickModule.h"
-#include "../../../denick/methodOne.h"
-#include "../../../denick/methodTwo.h"
-#include "../../../denick/methodThree.h"
 #include "moduleManager/commonData.h"
 #include <Windows.h>
 #include <shlobj.h>
