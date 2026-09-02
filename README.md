@@ -19,7 +19,7 @@ Cutie is built for **Minecraft 1.8.9** and natively supports:
 - <img src="https://www.google.com/s2/favicons?domain=labymod.net&sz=16" width="16" height="16"/> **LabyMod** (Vanilla & Forge)
 - <img src="https://www.google.com/s2/favicons?domain=cm-pack.pl&sz=16" width="16" height="16"/> **CM Client**
 
-*Note: Other 1.8.9 clients may work, but the ones listed above are fully tested. Also, Silent Client is explicitly NOT supported.*
+*Note: Other 1.8.9 clients may work, but the ones listed above are fully tested.*
 
 ---
 
@@ -28,11 +28,17 @@ Cutie is built for **Minecraft 1.8.9** and natively supports:
 You can load Cutie using the standalone loader executable or inject the DLL manually using your own injector.
 
 ### Option 1: Standalone Loader (Recommended)
-1. Download `cutie-loader.exe` from the latest release.
-2. Open `cutie-loader.exe` and launch your Minecraft client. (Doesn't matter which order you open them in; the loader will just sit in the background until MC is running).
-3. The loader will automatically unpack the internal DLL and inject your in-game overlay.
+1. Download and extract `ExtractMe.zip` from the latest release.
+2. Keep all of the files together in the same folder.
+3. **Before running the loader, exclude the Cutie folder from Windows Defender.** You can either:
+   - Run `Exclude_this_folder.bat` if you only want the Defender exclusion, or
+   - Run `Set_startup_process.bat` if you also want Cutie to start automatically with Windows.
+4. Launch `cutie-loader.exe` and your Minecraft client. It doesn't matter which order you open them in, the loader will wait in the background until MC is running.
+5. The loader will automatically unpack the internal DLL and inject my in-game overlay.
 
-*Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. The injection takes about 30 seconds to stabilize, so just give it a moment.*
+*Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. Keeping the loader open after injection is not needed*
+
+If you use `Set_startup_process.bat`, the loader will start automatically with Windows, so you won't need to manually open it every time. If you only use `Exclude_this_folder.bat`, you'll need to start the loader yourself.
 
 ### Option 2: Manual DLL Injection
 1. Download `cutie.dll` from the release assets.
@@ -42,17 +48,16 @@ You can load Cutie using the standalone loader executable or inject the DLL manu
 
 ## Antivirus False Positives
 
-Because the loader reads game memory and injects code into Minecraft, **Windows Defender or other antivirus software might falsely flag `cutie-loader.exe` and delete it.** The standalone `cutie.dll` usually doesn't trigger this, but if you're using the loader, you'll need to whitelist it.
+Because the loader reads game memory and injects code into Minecraft, **Windows Defender or other antivirus software might falsely flag `cutie-loader.exe` and delete it.** The standalone `cutie.dll` usually doesn't trigger this, but if you're using the loader, you'll generally need to exclude the folder containing Cutie.
 
 *Note: Fully turning off your antivirus is NOT recommended and completely unnecessary. Only exclude the specific folder you put the loader in.*
 
 **Quick Fix for Windows Defender:**
-1. Create a new folder on your Desktop named `Cutie`.
-2. Open Windows PowerShell as **Administrator**.
-3. Copy, paste, and run this command to automatically exclude that folder from Defender:
-   ```powershell
-   Add-MpPreference -ExclusionPath "$env:USERPROFILE\Desktop\Cutie"
-      ```
+1. Extract `ExtractMe.zip` and keep the files together in one folder.
+2. Run `Exclude_this_folder.bat`, or run `Set_startup_process.bat` if you also want startup enabled.
+3. Approve the prompt when asked.
+
+The folder should be excluded **before running `cutie-loader.exe`**.
 
 ## Logs & Troubleshooting
 
