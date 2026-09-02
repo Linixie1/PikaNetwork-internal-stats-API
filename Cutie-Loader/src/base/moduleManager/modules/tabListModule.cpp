@@ -4631,7 +4631,7 @@ void TabList::RenderMenu() {
     if (ImGui::InputText("##TW", settings::TL_TargetWarningNames, sizeof(settings::TL_TargetWarningNames))) Menu::bPendingConfigSave = true;
     ImGui::Separator();
     ImGui::Text("Anti-Spam Settings");
-    Menu::Checkbox("Block Sale/Title Spam", &settings::AntiSpam_Enabled);
+    Menu::Checkbox("Remove Sale-title", &settings::AntiSpam_Enabled);
     static char customKeywordBuf[64] = "";
     ImGui::InputText("##keyword_input", customKeywordBuf, sizeof(customKeywordBuf));
     ImGui::SameLine();
