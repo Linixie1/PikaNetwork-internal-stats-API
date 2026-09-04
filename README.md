@@ -36,7 +36,7 @@ You can load Cutie using the standalone loader executable or inject the DLL manu
 4. Launch `cutie-loader.exe` and your Minecraft client. It doesn't matter which order you open them in, the loader will wait in the background until MC is running.
 5. The loader will automatically unpack the internal DLL and inject my in-game overlay.
 
-*Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. Keeping the loader open after injection is not needed*
+*Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. Keeping the loader open after injection is not needed. If the stats don't inject in tab list while using a supported client, make sure your JDK version is 8 (newer versions that don't have the HotSpot Java Virtual Machine aren't supported.*
 
 If you use `Set_startup_process.bat`, the loader will start automatically with Windows, so you won't need to manually open it every time. If you only use `Exclude_this_folder.bat`, you'll need to start the loader yourself.
 
