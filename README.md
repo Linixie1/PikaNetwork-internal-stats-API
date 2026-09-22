@@ -1,13 +1,17 @@
 # Cutie - PikaNetwork Internal Stats API & Tablist Overlay
 
-If you are looking for **overlays for Pika Network**, Cutie is an internal stats modification for Minecraft 1.8.9 that provides a far superior alternative. Instead of drawing clunky external screen overlays on top of your game window, Cutie acts as a native Pika Network overlay by rendering real-time statistics directly inside the Minecraft tab list.
+If you are looking for **overlays for Pika Network**, Cutie is an internal stats modification for Minecraft 1.8.9 that provides a far superior alternative. Instead of drawing ugly external screen overlays on top of your game window, Cutie acts as a native PikaNetwork overlay by rendering real-time statistics directly inside the Minecraft tab-list.
 
 ![Loader Menu](loader_preview.png)
 
 > **Is this a cheat / bannable?**  
-> Cutie is not a cheat. It acts purely as a stats viewer and offers zero gameplay advantages. Traditional Pika Network stats overlays have never been bannable. To prove it is safe, the project is published under a strict Source-Available Restricted License purely for transparency and security auditing. The license explicitly forbids any malicious or harmful use.  
+> Cutie is not a cheat. It acts purely as a stats viewer and offers zero gameplay advantages. Traditional Pika Network stats overlays have never been bannable.
 > 
-> That being said, Cutie works by injecting directly into Minecraft's memory so it can render the stats overlay right inside the native tablist. Because it injects like a traditional client modification, people might get banned if they are screenshared by staff. Besides screenshares though, you generally should not have any issues. Just keep the injection risk in mind and use it at your own discretion.
+> That being said, Cutie works by injecting directly into Minecraft's memory so it can render the stats overlay right inside the native tablist. Because it injects like a traditional client modification, people might get banned if they are screenshared by staff. Besides screenshares though, you generally should not have any issues. Just keep the injection risk in mind and use it at your own will.
+
+> **Denicker Usage**
+>
+> Cutie also includes an optional **Denicker** feature. Denicker should only be used on private servers that explicitly allow its use, your own servers, or authorized educational/testing environments. You are responsible for complying with the rules and terms of the server, client, platform, and software you are using. Do not use Denicker where it is prohibited.
 
 ## Supported Clients (1.8.9)
 Cutie is built for **Minecraft 1.8.9** and natively supports:  
@@ -17,9 +21,10 @@ Cutie is built for **Minecraft 1.8.9** and natively supports:
 - <img src="https://www.google.com/s2/favicons?domain=lunarclient.com&sz=16" width="16" height="16"/> **Lunar Client** (OptiFine & Forge)
 - <img src="https://www.google.com/s2/favicons?domain=badlion.net&sz=16" width="16" height="16"/> **Badlion Client** (Badlion and Optifine)
 - <img src="https://www.google.com/s2/favicons?domain=labymod.net&sz=16" width="16" height="16"/> **LabyMod** (Vanilla & Forge)
-- <img src="https://www.google.com/s2/favicons?domain=cm-pack.pl&sz=16" width="16" height="16"/> **CM Client**
+- <img src="https://www.google.com/s2/favicons?domain=cm-pack.pl&sz=16" width="16" height="16"/> **CM Client (Denicker Excluded)**
 
-*Note: Other 1.8.9 clients may work, but the ones listed above are fully tested.*
+*Note: Other 1.8.9 clients may work, but the ones listed above are fully tested. Silent Client is not supported!*
+
 
 ---
 
@@ -36,9 +41,9 @@ You can load Cutie using the standalone loader executable or inject the DLL manu
 4. Launch `cutie-loader.exe` and your Minecraft client. It doesn't matter which order you open them in, the loader will wait in the background until MC is running.
 5. The loader will automatically unpack the internal DLL and inject my in-game overlay.
 
-*Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. Keeping the loader open after injection is not needed. If the stats don't inject in tab list while using a supported client, make sure your JDK version is 8 (newer versions that don't have the HotSpot Java Virtual Machine aren't supported.*
+*Note: You don't need to be in a world to inject, and you can do whatever you want in-game while waiting. Keeping the loader open after injection is not needed. If the stats don't inject in tab list while using a supported client, consider checking your JDK, its tested on JDK 8 and 17.*
 
-If you use `Set_startup_process.bat`, the loader will start automatically with Windows, so you won't need to manually open it every time. If you only use `Exclude_this_folder.bat`, you'll need to start the loader yourself.
+If you use `Set_startup_process.bat`, the loader will start automatically with Windows, so you won't need to manually open it every time. If you only use `Exclude_this_folder.bat`, you will have to start the loader yourself.
 
 ### Option 2: Manual DLL Injection
 1. Download `cutie.dll` from the release assets.
@@ -48,7 +53,7 @@ If you use `Set_startup_process.bat`, the loader will start automatically with W
 
 ## Antivirus False Positives
 
-Because the loader reads game memory and injects code into Minecraft, **Windows Defender or other antivirus software might falsely flag `cutie-loader.exe` and delete it.** The standalone `cutie.dll` usually doesn't trigger this, but if you're using the loader, you'll generally need to exclude the folder containing Cutie.
+Because the loader reads game memory and injects code into Minecraft, **Windows Defender or other antivirus software might falsely flag `cutie-loader.exe` and delete it.** 
 
 *Note: Fully turning off your antivirus is NOT recommended and completely unnecessary. Only exclude the specific folder you put the loader in.*
 
@@ -70,7 +75,7 @@ If you run into injection issues, crashes, or rendering bugs with the stats over
 ## Tablist Status Indicators
 
 When viewing stats in-game or via the tab list overlay:
-- **NICK**: Player is using a nickname.
+- **NICK**: Player is using a nickname. Can be denicked directly in tab-list.
 - **OFF**: Player has hidden their stats on the API.
 - **N/A**: Player stats are unavailable (e.g., brand-new account with 0 stats).
 
@@ -91,12 +96,24 @@ Unlike traditional external overlays, configuring your stats display is done ent
 
 ---
 
+## Usage & Legal Notice
+
+Cutie and its features should only be used in environments where you have permission to use them, including private servers that explicitly allow their use, your own servers, or authorized educational/testing environments.
+
+You are responsible for complying with the rules and terms of the server, client, platform, and software you use. Do not use Cutie or Denicker to bypass restrictions, obtain unauthorized access, interfere with services or users, or violate applicable laws, rules, or terms of service.
+
+Third-party software, trademarks, APIs, assets, and other intellectual property referenced by this project remain the property of their respective owners. Cutie does not claim ownership of third-party intellectual property.
+
+Nothing in this notice grants permission to use Cutie or Denicker on a server or service where their use is prohibited.
+
+---
+
 ## Support
-For bugs or questions, reach out on Discord: `linixie.`
+For bugs, compliments or questions, reach out on Discord: `linixie.`
 
 ---
 
 ### Credits & Acknowledgements
-- [<img src="https://avatars.githubusercontent.com/u/1010356?s=32&v=4" width="16" height="16" />](https://github.com/nlohmann/json) **[nlohmann/json](https://github.com/nlohmann/json)** - JSON for Modern C++. 
+- [<img src="https://avatars.githubusercontent.com/u/1010356?s=32&v=4" width="16" height="16" />](https://github.com/nlohmann/json) **https://github.com/nlohmann/json** - JSON for Modern C++. 
 - [<img src="https://avatars.githubusercontent.com/u/8225057?s=32&v=4" width="16" height="16" />](https://github.com/ocornut/imgui) **[Dear ImGui](https://github.com/ocornut/imgui)** - Bloat-free Immediate Mode Graphical User Interface for C++ with minimal dependencies.
 - [<img src="https://github.com/YuriSizuku.png?size=32" width="16" height="16" />](https://github.com/YuriSizuku/OnscripterYuri) **[ONScripter-Yuri](https://github.com/YuriSizuku/OnscripterYuri)** - An enhanced ONScripter project porting to many platforms.
