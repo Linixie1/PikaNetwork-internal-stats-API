@@ -45,6 +45,15 @@ struct TabListStatsData {
     std::chrono::system_clock::time_point fetchTime;
 };
 
+struct TabListStatsData {
+    std::string realName;
+    bool        isSpec = false;
+};
+
+static void InjectRealName(const std::string& fakeName, const std::string& realName);
+static void MarkAsSpectator(const std::string& name);
+static void ClearSpectator(const std::string& name);
+
 // used for splitting endpoints across the proxy pool
 enum class FetchTaskType {
     LEADERBOARD,

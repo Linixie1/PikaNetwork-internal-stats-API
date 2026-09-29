@@ -678,7 +678,43 @@ TabList::TabList() {
         workerThreads.emplace_back(&TabList::WorkerThreadFunc);
     }
 }
+void TabList::InjectRealName(const std::string& fakeName, const std::string& realName) {
+    if (fakeName.empty() || realName.empty()) return;
 
+    std::lock_guard<std::mutex> lk(cacheMutex);
+    auto it = nameCache.find(fakeName);
+    if (it == nameCache.end()) {
+        TabListStatsData s;
+        s.isValid = true;
+        s.fetchTime = std::chrono::system_clock::now();
+        s.realName = realName;
+        nameCache.emplace(fakeName, std::move(s));
+        return;
+    }
+    it->second.realName = realName;
+}
+
+void TabList::MarkAsSpectator(const std::string& name) {
+    if (name.empty()) return;
+
+    std::lock_guard<std::mutex> lk(cacheMutex);
+    auto it = nameCache.find(name);
+    if (it == nameCache.end()) {
+        TabListStatsData s;
+        s.isValid = true;
+        s.fetchTime = std::chrono::system_clock::now();
+        s.isSpec = true;
+        nameCache.emplace(name, std::move(s));
+        return;
+    }
+    it->second.isSpec = true;
+}
+
+void TabList::ClearSpectator(const std::string& name) {
+    std::lock_guard<std::mutex> lk(cacheMutex);
+    auto it = nameCache.find(name);
+    if (it != nameCache.end()) it->second.isSpec = false;
+}
 TabList::~TabList() {
     threadRunning = false;
     taskCv.notify_all();
